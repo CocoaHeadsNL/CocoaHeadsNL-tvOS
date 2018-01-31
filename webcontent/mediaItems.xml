@@ -8,12 +8,155 @@
           <title>Videos</title>
         </header>
         <section>
-            <listItemLockup onselect="playMedia('video1/Lammert+Westerhoff%2C+AWS+++Swift+codegen.m3u8', 'video')">
-             <title>Lammert Westerhoff, AWS Swift codegen</title>
+           <listItemLockup onselect="playMedia('video/2018-01/Lammert-Westerhoff-AWS-Swift-codegen.m3u8', 'video')">
+             <title>AWS Swift codegen
+               <subtitle>Lammert Westerhoff</subtitle>
+             </title>
+            <relatedContent>
+              <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                <title>AWS Swift codegen</title>
+                <description>A brief description for the fist movie here.</description>
+              </lockup>
+            </relatedContent>
+           </listItemLockup>
+            <listItemLockup onselect="playMedia('video/2018-01/Ellen-Shapiro-Some-bits-of-advice-about-public-speaking.m3u8', 'video')">
+              <title>Some bits of advice about public speaking
+                <subtitle>Ellen Shapiro</subtitle>
+              </title>
              <relatedContent>
                <lockup>
-                 <img src="https://f000.backblazeb2.com/file/cocoaheadsnl-tv/hqdefault.jpg" width="336" height="188" />
-                 <title>Lammert Westerhoff, AWS Swift codegen</title>
+                 <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Some bits of advice about public speaking</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+           <listItemLockup onselect="playMedia('video/2017-11/Bruno-Scheele-Lessons-in-accessibility.m3u8', 'video')">
+             <title>Lessons in accessibility
+               <subtitle>Bruno Scheele</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Lessons in accessibility</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-11/Jeroen-Zonneveld-How-we-use-the-BFF-pattern-in-the-My-Vodafone-app.m3u8', 'video')">
+             <title>How to use the BFF patter in the My Vodafone app
+               <subtitle>Jeroen Zonneveld</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>How to use the BFF patter in the My Vodafone app</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-10/Donny-Wals-Me-and-my-importers.m3u8', 'video')">
+             <title>Me and my importers
+               <subtitle>Donny Wals</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Me and my importers</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-10/Thomas-Gmelig-Meyling-Image-Processing-and-OCR-and-its-applications.m3u8', 'video')">
+             <title>Image Processing and OCS and its applications
+               <subtitle>Thomas Gmelig Meyling</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Image Processing and OCS and its applications</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-09/Tom-Lokhorst-Reactive-User-Interface.m3u8', 'video')">
+             <title>Reactive User Interface
+               <subtitle>Tom Lokhorst</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Reactive User Interface</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-09/Ian-Guedes-Maia-Designing-a-real-time-data-application.m3u8', 'video')">
+             <title>Designing a real time data application
+               <subtitle>Ian Guedes Maia</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Designing a real time data application</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-08/Eric-Scheers-Building-smooth-and-responsive-UI-with-Texture.m3u8', 'video')">
+             <title>Building smooth and responsive UI with Texture
+               <subtitle>Eric Scheeres</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Building smooth and responsive UI with Texture</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-08/Thomas-Visser-Reactive-programming-from-scratch.m3u8', 'video')">
+             <title>Reactive programming from scratch
+               <subtitle>Thomas Visser</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Reactive programming from scratch</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-07/Dan-Ursu-Automate-Everything.m3u8', 'video')">
+             <title>Automate everything
+               <subtitle>Dan Urse</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Automate everything</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+
+           <listItemLockup onselect="playMedia('video/2017-07/Antoine-van-der-Lee-Building-the-new-WeTransfer-mobile-app.m3u8', 'video')">
+             <title>Building the new WeTransfer Mobile app
+               <subtitle>Antoine van der Lee</subtitle>
+             </title>
+             <relatedContent>
+               <lockup>
+                <img src="https://cocoaheads.nl/tvos/video/default-screencap.jpg" width="857" height="482" />
+                 <title>Building the new WeTransfer Mobile app</title>
                  <description>A brief description for the fist movie here.</description>
                </lockup>
              </relatedContent>
