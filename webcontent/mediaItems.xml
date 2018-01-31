@@ -1,0 +1,24 @@
+<document>
+   <listTemplate>
+      <banner>
+         <title>CocoaHeadsNL</title>
+      </banner>
+      <list>
+        <header>
+          <title>Videos</title>
+        </header>
+        <section>
+            <listItemLockup onselect="playMedia('video1/Lammert+Westerhoff%2C+AWS+++Swift+codegen.m3u8', 'video')">
+             <title>Lammert Westerhoff, AWS Swift codegen</title>
+             <relatedContent>
+               <lockup>
+                 <img src="https://f000.backblazeb2.com/file/cocoaheadsnl-tv/hqdefault.jpg" width="336" height="188" />
+                 <title>Lammert Westerhoff, AWS Swift codegen</title>
+                 <description>A brief description for the fist movie here.</description>
+               </lockup>
+             </relatedContent>
+           </listItemLockup>
+        </section>
+      </list>
+   </listTemplate>
+</document>

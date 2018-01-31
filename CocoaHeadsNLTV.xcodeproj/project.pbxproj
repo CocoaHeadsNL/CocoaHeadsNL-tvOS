@@ -14,7 +14,6 @@
 /* Begin PBXFileReference section */
 		4A0E3F022020FBDC00828440 /* CocoaHeadsNLTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsNLTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0E3F052020FBDC00828440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A0E3F072020FBDC00828440 /* application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
 		4A0E3F082020FBDC00828440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0E3F0A2020FBDC00828440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				4A0E3F052020FBDC00828440 /* AppDelegate.swift */,
-				4A0E3F072020FBDC00828440 /* application.js */,
 				4A0E3F082020FBDC00828440 /* Assets.xcassets */,
 				4A0E3F0A2020FBDC00828440 /* Info.plist */,
 			);

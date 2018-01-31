@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     var appController: TVApplicationController?
     
     // tvBaseURL points to a server on your local machine. To create a local server for testing purposes, use the following command inside your project folder from the Terminal app: ruby -run -ehttpd . -p9001. See NSAppTransportSecurity for information on using a non-secure server.
-    static let tvBaseURL = "http://localhost:9001/"
-    static let tvBootURL = "\(AppDelegate.tvBaseURL)/application.js"
+    static let tvBaseURL = "https://f000.backblazeb2.com/file/cocoaheadsnl-tv/"
+    static let tvBootURL = "\(AppDelegate.tvBaseURL)application.js"
     
     // MARK: Javascript Execution Helper
     
