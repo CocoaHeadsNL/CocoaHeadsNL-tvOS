@@ -65,6 +65,7 @@
 				4A0E3EFE2020FBDC00828440 /* Sources */,
 				4A0E3EFF2020FBDC00828440 /* Frameworks */,
 				4A0E3F002020FBDC00828440 /* Resources */,
+				4A1D53D82022E69A0030F85E /* Set build number */,
 			);
 			buildRules = (
 			);
@@ -118,6 +119,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A1D53D82022E69A0030F85E /* Set build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $SRCROOT/Scripts/set_build_number.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A0E3EFE2020FBDC00828440 /* Sources */ = {
