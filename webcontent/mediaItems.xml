@@ -1,167 +1,184 @@
 <document>
-   <listTemplate>
-      <banner>
-         <title>CocoaHeadsNL</title>
-      </banner>
-      <list>
+  <listTemplate>
+    <banner>
+      <title>CocoaHeadsNL</title>
+    </banner>
+
+    <list>
+      <section>
         <header>
-          <title>Videos</title>
+          <title>Januari 2018</title>
         </header>
-        <section>
-           <listItemLockup onselect="playMedia('video/2018-01/Lammert-Westerhoff-AWS-Swift-codegen.m3u8', 'video')">
-             <title>AWS Swift codegen
-               <subtitle>Lammert Westerhoff</subtitle>
-             </title>
-            <relatedContent>
-              <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                <title>AWS Swift codegen</title>
-                <description>Lammert Westerhoff will present and give a live demo about serverless architecture for iOS apps with AWS API Gateway and AWS Lambda. And then using the Swagger file from the API Gateway to generate an API client in Swift.</description>
-              </lockup>
-            </relatedContent>
-           </listItemLockup>
-            <listItemLockup onselect="playMedia('video/2018-01/Ellen-Shapiro-Some-bits-of-advice-about-public-speaking.m3u8', 'video')">
-              <title>Some bits of advice about public speaking
-                <subtitle>Ellen Shapiro</subtitle>
-              </title>
-             <relatedContent>
-               <lockup>
-                 <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Some bits of advice about public speaking</title>
-                 <description>Ellen Shapiro (@designatednerd) will talk about het experience in giving talks and what it takes to prepare one. Ellen has given numerous presentations at various events and likes to share the most importants lessons learned.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
-           <listItemLockup onselect="playMedia('video/2017-11/Bruno-Scheele-Lessons-in-accessibility.m3u8', 'video')">
-             <title>Lessons in accessibility
-               <subtitle>Bruno Scheele</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Lessons in accessibility</title>
-                 <description>In this Talk Bruno Scheele, iOS engineer at Noodlewerk, talks about his lessons learned about making the CocoaHeadsNL iOS app more accessible. He gives examples of easy to implement changes that make your app instantly more accessible.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-01/Lammert-Westerhoff-AWS-Swift-codegen.m3u8', 'video')">
+          <title>AWS Swift codegen</title>
+          <subtitle>Lammert Westerhoff</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>AWS Swift codegen</title>
+              <description>Lammert Westerhoff will present and give a live demo about serverless architecture for iOS apps with AWS API Gateway and AWS Lambda. And then using the Swagger file from the API Gateway to generate an API client in Swift.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
 
-           <listItemLockup onselect="playMedia('video/2017-11/Jeroen-Zonneveld-How-we-use-the-BFF-pattern-in-the-My-Vodafone-app.m3u8', 'video')">
-             <title>How to use the BFF patter in the My Vodafone app
-               <subtitle>Jeroen Zonneveld</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>How to use the BFF patter in the My Vodafone app</title>
-                 <description>Jeroen Zonneveld, iOS engineer at Triple, talks about how they use the BFF pattern in the My Vodafone app. BFF stands for Backend for Frontend and is a software pattern in which a lot of the business logic of the app is moved to the backend.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-01/Ellen-Shapiro-Some-bits-of-advice-about-public-speaking.m3u8', 'video')">
+          <title>Some bits of advice about public speaking</title>
+          <subtitle>Ellen Shapiro</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Some bits of advice about public speaking</title>
+              <description>Ellen Shapiro (@designatednerd) will talk about het experience in giving talks and what it takes to prepare one. Ellen has given numerous presentations at various events and likes to share the most importants lessons learned.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
 
-           <listItemLockup onselect="playMedia('video/2017-10/Donny-Wals-Me-and-my-importers.m3u8', 'video')">
-             <title>Me and my importers
-               <subtitle>Donny Wals</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Me and my importers</title>
-                 <description>In this talk Donny Wals, engineer at I'M IN, will go over their experiences with a large and complex CoreData setup that uses concurrency and multiple contexts to import a huge amount of data from several API endpoints through a pipeline that makes use of an OperationQueue.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+      <section>
+        <header>
+          <title>November 2017</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2017-11/Bruno-Scheele-Lessons-in-accessibility.m3u8', 'video')">
+          <title>Lessons in accessibility</title>
+          <subtitle>Bruno Scheele</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Lessons in accessibility</title>
+              <description>In this Talk Bruno Scheele, iOS engineer at Noodlewerk, talks about his lessons learned about making the CocoaHeadsNL iOS app more accessible. He gives examples of easy to implement changes that make your app instantly more accessible.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
 
-           <listItemLockup onselect="playMedia('video/2017-10/Thomas-Gmelig-Meyling-Image-Processing-and-OCR-and-its-applications.m3u8', 'video')">
-             <title>Image Processing and OCS and its applications
-               <subtitle>Thomas Gmelig Meyling</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Image Processing and OCS and its applications</title>
-                 <description>With high quality camera's and great processing power, iPhones are more capable for complex Image Processing tasks than ever. In this presentation Thomas Gmelig Meyling, iOS engineer at M2mobi, will go through several open source libraries that cover barcode scanning and OCR and how to use them in a Swift environment.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2017-11/Jeroen-Zonneveld-How-we-use-the-BFF-pattern-in-the-My-Vodafone-app.m3u8', 'video')">
+          <title>How to use the BFF patter in the My Vodafone app</title>
+          <subtitle>Jeroen Zonneveld</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>How to use the BFF patter in the My Vodafone app</title>
+              <description>Jeroen Zonneveld, iOS engineer at Triple, talks about how they use the BFF pattern in the My Vodafone app. BFF stands for Backend for Frontend and is a software pattern in which a lot of the business logic of the app is moved to the backend.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
 
-           <listItemLockup onselect="playMedia('video/2017-09/Tom-Lokhorst-Reactive-User-Interface.m3u8', 'video')">
-             <title>Reactive User Interface
-               <subtitle>Tom Lokhorst</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Reactive User Interface</title>
-                 <description>Reactive programming can be a solution, but working with reactive streams can be quite complex. There are a lot of edges cases that you have to deal with. In this talk Tom Lokhorst, iOS engineer at Q42, looks at several ways of building reactive User Interfaces.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+      <section>
+        <header>
+          <title>October 2017</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2017-10/Donny-Wals-Me-and-my-importers.m3u8', 'video')">
+          <title>Me and my importers</title>
+          <subtitle>Donny Wals</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Me and my importers</title>
+              <description>In this talk Donny Wals, engineer at I'M IN, will go over their experiences with a large and complex CoreData setup that uses concurrency and multiple contexts to import a huge amount of data from several API endpoints through a pipeline that makes use of an OperationQueue.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
 
-           <listItemLockup onselect="playMedia('video/2017-09/Ian-Guedes-Maia-Designing-a-real-time-data-application.m3u8', 'video')">
-             <title>Designing a real time data application
-               <subtitle>Ian Guedes Maia</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Designing a real time data application</title>
-                 <description>iOS engineer Ian Guedes Maia of BUX shares the technologies they use to make their app perform well and reactive real-time to the ever changing stock market.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2017-10/Thomas-Gmelig-Meyling-Image-Processing-and-OCR-and-its-applications.m3u8', 'video')">
+          <title>Image Processing and OCS and its applications</title>
+          <subtitle>Thomas Gmelig Meyling</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Image Processing and OCS and its applications</title>
+              <description>With high quality camera's and great processing power, iPhones are more capable for complex Image Processing tasks than ever. In this presentation Thomas Gmelig Meyling, iOS engineer at M2mobi, will go through several open source libraries that cover barcode scanning and OCR and how to use them in a Swift environment.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
 
-           <listItemLockup onselect="playMedia('video/2017-08/Eric-Scheers-Building-smooth-and-responsive-UI-with-Texture.m3u8', 'video')">
-             <title>Building smooth and responsive UI with Texture
-               <subtitle>Eric Scheeres</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Building smooth and responsive UI with Texture</title>
-                 <description>To keep its UI performant, Blendle became an early adopter of the Texture framework (formerly known as AsyncDisplayKit). Originally built to make it easy to keep complex UI smooth and responsive, it has grown spectacularly</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+      <section>
+        <header>
+          <title>September 2017</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2017-09/Tom-Lokhorst-Reactive-User-Interface.m3u8', 'video')">
+          <title>Building Reactive User Interfaces</title>
+          <subtitle>Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Building Reactive User Interfaces</title>
+              <description>Reactive programming can be a solution, but working with reactive streams can be quite complex. There are a lot of edges cases that you have to deal with. In this talk Tom Lokhorst, iOS engineer at Q42, looks at several ways of building reactive User Interfaces.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
 
-           <listItemLockup onselect="playMedia('video/2017-08/Thomas-Visser-Reactive-programming-from-scratch.m3u8', 'video')">
-             <title>Reactive programming from scratch
-               <subtitle>Thomas Visser</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Reactive programming from scratch</title>
-                 <description>This talk covers the core concepts of reactive programming by looking at a minimalistic implementation in just a few dozen lines of code. The gained insights can be of help when adopting any of the popular reactive programming libraries to your own projects.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2017-09/Ian-Guedes-Maia-Designing-a-real-time-data-application.m3u8', 'video')">
+          <title>Designing a real time data application</title>
+          <subtitle>Ian Guedes Maia</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Designing a real time data application</title>
+              <description>iOS engineer Ian Guedes Maia of BUX shares the technologies they use to make their app perform well and reactive real-time to the ever changing stock market.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
 
-           <listItemLockup onselect="playMedia('video/2017-07/Dan-Ursu-Automate-Everything.m3u8', 'video')">
-             <title>Automate everything
-               <subtitle>Dan Urse</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Automate everything</title>
-                 <description>Dan Ursu is build tooling engineer at ING bank and in this talk he explains what tools ING is using in their CI solution to build their iOS apps. These tools include Git, GitLab, Jenkins, SwiftLint, Danger and Fastlane.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
+      <section>
+        <header>
+          <title>August 2017</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2017-08/Eric-Scheers-Building-smooth-and-responsive-UI-with-Texture.m3u8', 'video')">
+          <title>Building smooth and responsive UI with Texture</title>
+          <subtitle>Eric Scheeres</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Building smooth and responsive UI with Texture</title>
+              <description>To keep its UI performant, Blendle became an early adopter of the Texture framework (formerly known as AsyncDisplayKit). Originally built to make it easy to keep complex UI smooth and responsive, it has grown spectacularly</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
 
-           <listItemLockup onselect="playMedia('video/2017-07/Antoine-van-der-Lee-Building-the-new-WeTransfer-mobile-app.m3u8', 'video')">
-             <title>Building the new WeTransfer Mobile app
-               <subtitle>Antoine van der Lee</subtitle>
-             </title>
-             <relatedContent>
-               <lockup>
-                <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
-                 <title>Building the new WeTransfer Mobile app</title>
-                 <description>WeTransfer recently built a new mobile application and Antoine talks about their working culture, open sourcing, their CI setup and taking proper time to set up your environment for effective development.</description>
-               </lockup>
-             </relatedContent>
-           </listItemLockup>
-        </section>
-      </list>
-   </listTemplate>
+        <listItemLockup onselect="playMedia('video/2017-08/Thomas-Visser-Reactive-programming-from-scratch.m3u8', 'video')">
+          <title>Reactive programming from scratch</title>
+          <subtitle>Thomas Visser</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Reactive programming from scratch</title>
+              <description>This talk covers the core concepts of reactive programming by looking at a minimalistic implementation in just a few dozen lines of code. The gained insights can be of help when adopting any of the popular reactive programming libraries to your own projects.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
+          <title>July 2017</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2017-07/Dan-Ursu-Automate-Everything.m3u8', 'video')">
+          <title>Automate everything</title>
+          <subtitle>Dan Urse</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Automate everything</title>
+              <description>Dan Ursu is build tooling engineer at ING bank and in this talk he explains what tools ING is using in their CI solution to build their iOS apps. These tools include Git, GitLab, Jenkins, SwiftLint, Danger and Fastlane.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
+        <listItemLockup onselect="playMedia('video/2017-07/Antoine-van-der-Lee-Building-the-new-WeTransfer-mobile-app.m3u8', 'video')">
+          <title>Building the new WeTransfer Mobile app</title>
+          <subtitle>Antoine van der Lee</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video/default-screencap.jpg" width="857" height="482" />
+              <title>Building the new WeTransfer Mobile app</title>
+              <description>WeTransfer recently built a new mobile application and Antoine talks about their working culture, open sourcing, their CI setup and taking proper time to set up your environment for effective development.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+    </list>
+  </listTemplate>
 </document>

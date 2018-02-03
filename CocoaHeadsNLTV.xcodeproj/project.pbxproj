@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A0E3F062020FBDC00828440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E3F052020FBDC00828440 /* AppDelegate.swift */; };
 		4A0E3F092020FBDC00828440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E3F082020FBDC00828440 /* Assets.xcassets */; };
+		E2092A452025D513004E98BC /* mediaItems.xml in Resources */ = {isa = PBXBuildFile; fileRef = E2092A432025D513004E98BC /* mediaItems.xml */; };
+		E2092A462025D513004E98BC /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = E2092A442025D513004E98BC /* application.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		4A0E3F052020FBDC00828440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A0E3F082020FBDC00828440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0E3F0A2020FBDC00828440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2092A432025D513004E98BC /* mediaItems.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mediaItems.xml; sourceTree = "<group>"; };
+		E2092A442025D513004E98BC /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			children = (
 				4A0E3F042020FBDC00828440 /* CocoaHeadsNLTV */,
 				4A0E3F032020FBDC00828440 /* Products */,
+				E2092A422025D4E9004E98BC /* webcontent */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +58,15 @@
 				4A0E3F0A2020FBDC00828440 /* Info.plist */,
 			);
 			path = CocoaHeadsNLTV;
+			sourceTree = "<group>";
+		};
+		E2092A422025D4E9004E98BC /* webcontent */ = {
+			isa = PBXGroup;
+			children = (
+				E2092A442025D513004E98BC /* application.js */,
+				E2092A432025D513004E98BC /* mediaItems.xml */,
+			);
+			path = webcontent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0E3F092020FBDC00828440 /* Assets.xcassets in Resources */,
+				E2092A462025D513004E98BC /* application.js in Resources */,
+				E2092A452025D513004E98BC /* mediaItems.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
