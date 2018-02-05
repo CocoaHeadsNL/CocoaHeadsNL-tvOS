@@ -3,7 +3,7 @@
     {
       "orientation" : "landscape",
       "idiom" : "tv",
-      "filename" : "launch@2x.png",
+      "filename" : "CocoaHeadsNL@2x.png",
       "extent" : "full-screen",
       "minimum-system-version" : "11.0",
       "scale" : "2x"
@@ -11,7 +11,7 @@
     {
       "orientation" : "landscape",
       "idiom" : "tv",
-      "filename" : "launch.png",
+      "filename" : "CocoaHeadsNL.png",
       "extent" : "full-screen",
       "minimum-system-version" : "9.0",
       "scale" : "1x"
