@@ -179,6 +179,52 @@
         </listItemLockup>
       </section>
 
+      <section>
+        <header>
+          <title>September 2016</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2016-09/Mathijs-Kadijk-Rswift.m3u8', 'video')">
+          <title>R.swift - Statically typed resources for iOS</title>
+          <subtitle>Mathijs Kadijk</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2016-09/Mathijs-Kadijk-Rswift.jpg" width="857" height="482" />
+              <title>R.swift - Statically typed resources for iOS</title>
+              <description>Mathijs Kadijk presents R.swift at the September 2016 CocoaHeadsNL meetup. R.swift provides statically typed, autocompleted resources like images, fonts and segues in Swift projects.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
+          <title>January 2016</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2016-01/Tom-Lokhorst-Swift-JsonGen.m3u8', 'video')">
+          <title>Swift JsonGen</title>
+          <subtitle>Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2016-01/Tom-Lokhorst-Swift-JsonGen.jpg" width="857" height="482" />
+              <title>Swift JsonGen</title>
+              <description>Tom Lokhorst talks about parsing JSON in Swift. Why is this such a problem? What libraries are there to solve this problem? And how he created a code generator to deal with JSON once and for all.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
+        <listItemLockup onselect="playMedia('video/2016-01/Niels-van-Hoorn-Protocol-Oriented-DataSources.m3u8', 'video')">
+          <title>Protocol-Oriented DataSources</title>
+          <subtitle>Niels van Hoorn</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2016-01/Niels-van-Hoorn-Protocol-Oriented-DataSources.jpg" width="857" height="482" />
+              <title>Protocol-Oriented DataSources</title>
+              <description>Niels van Hoorn talks about protocol-oriented datasources. Combining James Bond and Swift, Niels does a live coding deep dive into protocols, extensions and type aliases.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
     </list>
   </listTemplate>
 </document>
