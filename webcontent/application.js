@@ -65,7 +65,9 @@ App.onDidEnterBackground = function() {
 }
 
 App.onWillEnterForeground = function() {
-    
+    baseURL = options.BASEURL;
+    var extension = "mediaItems.xml";
+    getDocument(extension);
 }
 
 App.onDidBecomeActive = function() {
