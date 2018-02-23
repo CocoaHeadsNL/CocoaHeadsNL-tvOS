@@ -10,7 +10,7 @@
           <title>February 2018</title>
         </header>
         <listItemLockup onselect="playMedia('video/2018-02/2018-02-tom-lokhorst.m3u8', 'video')">
-          <title>Rijksmusesum ArtViewer</title>
+          <title>Rijksmuseum ArtViewer</title>
           <subtitle>Tom Lokhorst</subtitle>
           <relatedContent>
             <lockup>
