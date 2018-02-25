@@ -1,7 +1,20 @@
 <document>
+  <head>
+    <style>
+      .logo {
+        tv-align: center;
+      }
+      @media tv-template and (tv-theme:light) {
+      .logo { tv-tint-color: rgb(0, 0, 0); }
+      }
+      @media tv-template and (tv-theme:dark) {
+      .logo { tv-tint-color: rgb(255, 255, 255); }
+      }
+    </style>
+  </head>
   <listTemplate>
     <banner>
-      <title>CocoaHeadsNL</title>
+      <badge src="resource://TitleHeader" class="logo" width="291" height="47" />
     </banner>
 
     <list>
