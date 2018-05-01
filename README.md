@@ -31,4 +31,4 @@ The above statement may sound harsh, but basically if you write original code on
 
 As maintainers of this project we do actively try and guide contributors through these hurdles, we want to work with our community to make this project a great success.
 
-All contributors to this project are listed here: [contributors](https://github.com/CocoaHeadsNL/CocoaHeadsNL-iOS/graphs/contributors)
+All contributors to this project are listed here: [contributors](https://github.com/CocoaHeadsNL/CocoaHeadsNL-tvOS/graphs/contributors)
