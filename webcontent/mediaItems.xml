@@ -22,6 +22,18 @@
         <header>
           <title>July 2018</title>
         </header>
+        <listItemLockup onselect="playMedia('video/2018-07/2018-07-aernout-peeters.m3u8', 'video')">
+          <title>Going from publisher to implementing GDPR</title>
+          <subtitle>Aernout Peeters</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-07/2018-07-aernout-peeters.jpg" width="857" height="482" />
+              <title>Going from publisher to implementing GDPR</title>
+              <description>Aernout Peeters gives some insights on the development of apps at the ANWB. How they changed from using external agencies to developing in house. He also gives details on how they implemented the GDPR in their apps and what challenges they were facing.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
         <listItemLockup onselect="playMedia('video/2018-07/2018-07-tjeerd-in-t-veen.m3u8', 'video')">
           <title>The Testing Games: Mocking, yay!</title>
           <subtitle>Tjeerd in 't Veen</subtitle>
