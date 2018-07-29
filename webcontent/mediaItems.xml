@@ -35,7 +35,7 @@
         </listItemLockup>
 
         <listItemLockup onselect="playMedia('video/2018-07/2018-07-tjeerd-in-t-veen.m3u8', 'video')">
-          <title>The Testing Games: Mocking, yay!</title>
+          <title>Some ❤️ for enums</title>
           <subtitle>Tjeerd in 't Veen</subtitle>
           <relatedContent>
             <lockup>
