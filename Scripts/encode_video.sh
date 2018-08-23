@@ -12,16 +12,16 @@
 #
 
 # Version number
-version="1.0"
+version="1.0.1"
 
 # The base URL where the videos are stored
 baseurl=https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video
 
 # Set year to default value of current year
-year=$(date +%Y)
+year=$(date +%-Y)
 
 # Set month to default value of current month
-month=$(date +%m)
+month=$(date +%-m)
 
 # The base output filename. If none is specified on the command line, a default name will be created based on the input filename.
 output_filename=""
