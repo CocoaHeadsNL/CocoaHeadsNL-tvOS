@@ -22,6 +22,18 @@
         <header>
           <title>August 2018</title>
         </header>
+        <listItemLockup onselect="playMedia('video/2018-08/2018-08-dmitrii-ivanov.m3u8', 'video')">
+          <title>Qardio experience with Core Data</title>
+          <subtitle>Dmitrii Ivanov</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-08/2018-08-dmitrii-ivanov.jpg" width="857" height="482" />
+              <title>Qardio experience with Core Data</title>
+              <description>Dmitrii Ivanov gives us an insight view of the experience that the Qardio iOS team has gained over the years by using Core Data. He explains the issues they've had with Core Data, the different stacks you can use and their implementation and performance differences.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
         <listItemLockup onselect="playMedia('video/2018-08/2018-08-maria-postupaeva.m3u8', 'video')">
           <title>Payconiq Clean Architecture</title>
           <subtitle>Maria Postupaeva</subtitle>
