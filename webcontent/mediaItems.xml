@@ -20,6 +20,36 @@
     <list>
       <section>
         <header>
+          <title>October 2018</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2018-10/2018-10-jeroen-leenarts.m3u8', 'video')">
+          <title>Qardio experience with Core Data</title>
+          <subtitle>Jeroen Leenarts</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-10/2018-10-jeroen-leenarts.jpg" width="857" height="482" />
+              <title>Creating and Deugging iOS Network Extensions</title>
+              <description>Jeroen Leenarts talks about what it takes to create and debug iOS network extensions. He learned about this while working on the WireGuard open source project and he shares his experience on how this worked out for him.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
+        <listItemLockup onselect="playMedia('video/2018-10/2018-10-roel-spruit.m3u8', 'video')">
+          <title>Testale iOS Architecture</title>
+          <subtitle>Roel Spruit</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-10/2018-10-roel-spruit.jpg" width="857" height="482" />
+              <title>Testable iOS Architecture</title>
+              <description>Roel Spruit talks about how to design your app and create an architecture in your app that makes it more easy to test. He demonstrates this with a small demo app that shows pugs because nothing can convince you more than pictures of cute dogs.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
+      </section>
+
+      <section>
+        <header>
           <title>August 2018</title>
         </header>
         <listItemLockup onselect="playMedia('video/2018-08/2018-08-dmitrii-ivanov.m3u8', 'video')">
