@@ -18,6 +18,7 @@
     </banner>
 
     <list>
+
       <section>
         <header>
           <title>November 2018</title>
@@ -33,7 +34,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-11/2018-11-stijn-spijker-and-sander-van-tulden.m3u8', 'video')">
           <title>Flitsmeister - When CarPlay?</title>
           <subtitle>Stijn Spijker &amp; Sander van Tulden</subtitle>
@@ -45,7 +45,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
       </section>
 
       <section>
@@ -63,7 +62,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-10/2018-10-roel-spruit.m3u8', 'video')">
           <title>Testable iOS Architecture</title>
           <subtitle>Roel Spruit</subtitle>
@@ -75,7 +73,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
       </section>
 
       <section>
@@ -93,7 +90,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-08/2018-08-maria-postupaeva.m3u8', 'video')">
           <title>Payconiq Clean Architecture</title>
           <subtitle>Maria Postupaeva</subtitle>
@@ -105,7 +101,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
       </section>
 
       <section>
@@ -123,7 +118,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-07/2018-07-tjeerd-in-t-veen.m3u8', 'video')">
           <title>Some ❤️ for enums</title>
           <subtitle>Tjeerd in 't Veen</subtitle>
@@ -152,7 +146,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-05/2018-05-jeroen-leenarts.m3u8', 'video')">
           <title>CocoaHeadsNL apps</title>
           <subtitle>Jeroen Leenarts</subtitle>
@@ -164,7 +157,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-05/2018-05-joost-diepenmaat.m3u8', 'video')">
           <title>How to build a kick-ass document scanner, the simple way</title>
           <subtitle>Joost Diepenmaat</subtitle>
@@ -210,7 +202,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-03/2018-03-robert-hein-hooijmans.m3u8', 'video')">
           <title>Creating a 3D game in Swift (in 2 days)</title>
           <subtitle>Robert-Hein Hooijmans</subtitle>
@@ -239,7 +230,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-02/2018-02-klaas-pieter-annema.m3u8', 'video')">
           <title>Functioning Functionally</title>
           <subtitle>Klaas Pieter Annema</subtitle>
@@ -268,7 +258,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2018-01/Ellen-Shapiro-Some-bits-of-advice-about-public-speaking.m3u8', 'video')">
           <title>Some bits of advice about public speaking</title>
           <subtitle>Ellen Shapiro</subtitle>
@@ -297,7 +286,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2017-11/Jeroen-Zonneveld-How-we-use-the-BFF-pattern-in-the-My-Vodafone-app.m3u8', 'video')">
           <title>How to use the BFF patter in the My Vodafone app</title>
           <subtitle>Jeroen Zonneveld</subtitle>
@@ -326,7 +314,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2017-10/Thomas-Gmelig-Meyling-Image-Processing-and-OCR-and-its-applications.m3u8', 'video')">
           <title>Image Processing and OCS and its applications</title>
           <subtitle>Thomas Gmelig Meyling</subtitle>
@@ -355,7 +342,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2017-09/Ian-Guedes-Maia-Designing-a-real-time-data-application.m3u8', 'video')">
           <title>Designing a real time data application</title>
           <subtitle>Ian Guedes Maia</subtitle>
@@ -384,7 +370,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2017-08/Thomas-Visser-Reactive-programming-from-scratch.m3u8', 'video')">
           <title>Reactive programming from scratch</title>
           <subtitle>Thomas Visser</subtitle>
@@ -413,7 +398,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2017-07/Antoine-van-der-Lee-Building-the-new-WeTransfer-mobile-app.m3u8', 'video')">
           <title>Building the new WeTransfer Mobile app</title>
           <subtitle>Antoine van der Lee</subtitle>
@@ -459,7 +443,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-
         <listItemLockup onselect="playMedia('video/2016-01/Niels-van-Hoorn-Protocol-Oriented-DataSources.m3u8', 'video')">
           <title>Protocol-Oriented DataSources</title>
           <subtitle>Niels van Hoorn</subtitle>
