@@ -20,6 +20,36 @@
     <list>
       <section>
         <header>
+          <title>November 2018</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2018-11/2018-11-jeroen-bouma.m3u8', 'video')">
+          <title>Back to the future</title>
+          <subtitle>Jeroen Bouma</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/2018-11-jeroen-bouma.jpg" width="857" height="482" />
+              <title>Back to the future</title>
+              <description>Jeroen Bouma explains how the team of the well know Appie app from Albert Heijn changed the old code base written in Objective-C to a modern app written in Swift.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
+        <listItemLockup onselect="playMedia('video/2018-11/2018-11-stijn-spijker-and-sander-van-tulden.m3u8', 'video')">
+          <title>Flitsmeister - When CarPlay?</title>
+          <subtitle>Stijn Spijker &amp; Sander van Tulden</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/2018-11-stijn-spijker-and-sander-van-tulden.jpg" width="857" height="482" />
+              <title>Flitsmeister - When CarPlay?</title>
+              <description>Apple surprised developers at WWDC 2018 with an announcement that CarPlay would become available for 3rd party navigation apps. Stijn Spijker and Sander van Tulden explain how they implemented it for Flitsmeister and what problems they ran into.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+
+      </section>
+
+      <section>
+        <header>
           <title>October 2018</title>
         </header>
         <listItemLockup onselect="playMedia('video/2018-10/2018-10-jeroen-leenarts.m3u8', 'video')">
