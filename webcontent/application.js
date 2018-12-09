@@ -4,7 +4,6 @@
 //  application.js
 //  CocoaHeadsNLTV
 //
-//  Created by Jeroen Leenarts on 30-01-18.
 //  Copyright © 2018 CocoaHeadsNL. All rights reserved.
 //
 
