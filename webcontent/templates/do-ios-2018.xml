@@ -1,0 +1,30 @@
+<document>
+  <head>
+    <style>
+      .logo {
+        tv-align: center;
+      }
+      @media tv-template and (tv-theme:light) {
+        .banner { background-color:#303030; }
+      }
+      @media tv-template and (tv-theme:dark) {
+        .banner { background-color:#d0d0d0; }
+      }
+    </style>
+  </head>
+  <listTemplate>
+    <banner class="banner">
+      <badge src="resource://Logo-DoiOS" class="logo" width="291" height="159" />
+    </banner>
+
+    <list>
+
+      <section>
+        <header>
+          <title>Do iOS 2018</title>
+        </header>
+      </section>
+
+    </list>
+  </listTemplate>
+</document>
