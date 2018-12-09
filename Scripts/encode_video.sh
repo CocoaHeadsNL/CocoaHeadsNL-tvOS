@@ -12,7 +12,7 @@
 #
 
 # Version number
-version="1.0.1"
+version="1.1.0"
 
 # The base URL where the videos are stored
 baseurl=https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video
@@ -26,27 +26,31 @@ month=$(date +%-m)
 # The base output filename. If none is specified on the command line, a default name will be created based on the input filename.
 output_filename=""
 
+# An optional sub-directory, this can be used for special events.
+sub_dir=""
+
 # Process a single video file. This will encode the video, split it into segments for HLS and generate the necessary m3u8 playlist files.
 # Parameters:
 # $1 = Input filename
 # $2 = Year
 # $3 = Month
 # $4 = Base output filename
+# $5 = Optional sub-directory, e.g. for special events
 process_video()
 {
-    encode_video "$1" "$(output_directory_for_preset 1 $2 $3)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 1
-    encode_video "$1" "$(output_directory_for_preset 2 $2 $3)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 2
-    encode_video "$1" "$(output_directory_for_preset 3 $2 $3)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 3
-    encode_video "$1" "$(output_directory_for_preset 4 $2 $3)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 4
-    encode_video "$1" "$(output_directory_for_preset 5 $2 $3)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 5
+    encode_video "$1" "$(output_directory_for_preset 1 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 1
+    encode_video "$1" "$(output_directory_for_preset 2 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 2
+    encode_video "$1" "$(output_directory_for_preset 3 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 3
+    encode_video "$1" "$(output_directory_for_preset 4 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 4
+    encode_video "$1" "$(output_directory_for_preset 5 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 5
 
-    segment_video "$(output_directory_for_preset 1 $2 $3)" "$(base_output_filename $2 $3 "$4")"
-    segment_video "$(output_directory_for_preset 2 $2 $3)" "$(base_output_filename $2 $3 "$4")"
-    segment_video "$(output_directory_for_preset 3 $2 $3)" "$(base_output_filename $2 $3 "$4")"
-    segment_video "$(output_directory_for_preset 4 $2 $3)" "$(base_output_filename $2 $3 "$4")"
-    segment_video "$(output_directory_for_preset 5 $2 $3)" "$(base_output_filename $2 $3 "$4")"
+    segment_video "$(output_directory_for_preset 1 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
+    segment_video "$(output_directory_for_preset 2 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
+    segment_video "$(output_directory_for_preset 3 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
+    segment_video "$(output_directory_for_preset 4 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
+    segment_video "$(output_directory_for_preset 5 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
 
-    create_master_playlist $2 $3 "$(base_output_filename $2 $3 "$4")"
+    create_master_playlist $2 $3 "$(base_output_filename $2 $3 "$4")" "$5"
 }
 
 # Encode a single video file using ffmpeg
@@ -75,19 +79,20 @@ segment_video()
 # $1 = Year
 # $2 = Month
 # $3 = Base output filename
+# $4 = Optional sub-directory, e.g. for special events
 create_master_playlist()
 {
-    variantplaylistcreator -o "$(output_directory $1 $2)/$(add_file_extension "$3" 'm3u8')" \
-        "$baseurl/$(output_directory_for_preset 3 $1 $2)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 3 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 3 $1 $2)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 3 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 1 $1 $2)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 1 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 1 $1 $2)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 1 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 2 $1 $2)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 2 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 2 $1 $2)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 2 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 4 $1 $2)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 4 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 4 $1 $2)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 4 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 5 $1 $2)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 5 $1 $2)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 5 $1 $2)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 5 $1 $2)/$(add_file_extension "$3" 'plist')"
+    variantplaylistcreator -o "$(output_directory $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" \
+        "$baseurl/$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
+        "$baseurl/$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'plist')"
 }
 
 # Returns the ffmpeg parameters to use for a specific preset
@@ -169,13 +174,18 @@ codec_for_preset()
     esac
 }
 
-# Returns the bbase output directory to use.
+# Returns the base output directory to use.
 # Parameters:
 # $1 = The year of the date of the video
 # $2 = The month of the date of the video
+# $3 = Optional sub-directory, e.g. for special events
 output_directory()
 {
-    echo "$1-$2"
+    if [ "$3" != "" ]; then
+        echo "$1-$2/$3"
+    else
+        echo "$1-$2"
+    fi
 }
 
 # Returns the output directory to use for a given preset
@@ -183,9 +193,10 @@ output_directory()
 # $1 = The preset number
 # $2 = The year of the date of the video
 # $3 = The month of the date of the video
+# $4 = Optional sub-directory, e.g. for special events
 output_directory_for_preset()
 {
-    echo "$(output_directory $2 $3)/$(resolution_for_preset $1)@$(framerate_for_preset $1)-$(codec_for_preset $1)"
+    echo "$(output_directory $2 $3 $4)/$(resolution_for_preset $1)@$(framerate_for_preset $1)-$(codec_for_preset $1)"
 }
 
 # Returns the output file name to use
@@ -288,6 +299,7 @@ show_usage()
     printf "  $(optioncolor)-o$(nocolor)  $(dimmedcolor)(or $(optioncolor)--output-file$(dimmedcolor))$(nocolor)  The base name for the output file.\n"
     printf "  $(optioncolor)-m$(nocolor)  $(dimmedcolor)(or $(optioncolor)--month$(dimmedcolor))$(nocolor)        The year of the recording of the video.\n"
     printf "  $(optioncolor)-y$(nocolor)  $(dimmedcolor)(or $(optioncolor)--year$(dimmedcolor))$(nocolor)         The month of the recording of the video.\n"
+    printf "  $(optioncolor)-s$(nocolor)  $(dimmedcolor)(or $(optioncolor)--sub-dir$(dimmedcolor))$(nocolor)      Optional sub-directory for output.\n"
     printf "  $(optioncolor)-v$(nocolor)  $(dimmedcolor)(or $(optioncolor)--version$(dimmedcolor))$(nocolor)      Show the version number.\n"
     printf "  $(optioncolor)-h$(nocolor)  $(dimmedcolor)(or $(optioncolor)--help$(dimmedcolor))$(nocolor)         Show this help screen.\n"
     printf "\n"
@@ -339,6 +351,10 @@ while [[ $# -gt 0 ]]; do
             output_filename="$2"
             shift;;
 
+        -s | --sub-dir)
+            sub_dir="$2"
+            shift;;
+
         -h | --help)
             show_header_and_usage
             exit;;
@@ -386,5 +402,5 @@ year=$(printf "%04d" $year)
 month=$(printf "%02d" $month)
 
 # Process the video file
-process_video "$1" "$year" "$month" "$output_filename"
+process_video "$1" "$year" "$month" "$output_filename" "$sub_dir"
 exit 0
