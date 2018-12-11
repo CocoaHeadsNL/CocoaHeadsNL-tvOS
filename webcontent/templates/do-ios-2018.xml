@@ -34,6 +34,28 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-abn-amro-mobile-team.m3u8', 'video')">
+          <title>Our journey to automated releases</title>
+          <subtitle>ABN-AMRO Mobile Team</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-abn-amro-mobile-team.jpg" width="857" height="482" />
+              <title>Our journey to automated releases</title>
+              <description>In this talk four developers of the ABN-AMRO Mobile Team show how they have set up their release pipeline. They used to use Gitflow but because of a lot of long-lived branches they switched to a much simpler model with feature toggles. Their pipeline is fully automated with a range of tools that are run from Fastlane.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-eduard-ockerse.m3u8', 'video')">
+          <title>ARKit Introduction</title>
+          <subtitle>Eduard Ockerse</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-eduard-ockerse.jpg" width="857" height="482" />
+              <title>ARKit Introduction</title>
+              <description>Eduard Ockerse demonstrates a way of showing and playing a video in 3D space with ARKit. He shows how to recognise a piece a paper with a still image of the video that is replaced in real-time with the playing video.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
         <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-daniel-steinberg.m3u8', 'video')">
           <title>Siri shortcuts</title>
           <subtitle>Daniel Steinberg</subtitle>
