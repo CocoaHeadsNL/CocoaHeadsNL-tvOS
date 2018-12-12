@@ -1,1 +1,0 @@
-ffmpeg -i Lammert\ Westerhoff\,\ AWS\ \ \ Swift\ codegen.mp4 -strict -2 -acodec aac -vcodec libx264 -crf 25 -hls_list_size 0 Lammert\ Westerhoff\,\ AWS\ \ \ Swift\ codegen.m3u8
