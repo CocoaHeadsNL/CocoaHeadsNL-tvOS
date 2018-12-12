@@ -5,10 +5,10 @@
         tv-align: center;
       }
       @media tv-template and (tv-theme:light) {
-        .banner { background-color:#303030; }
+      .banner { background-color:#eeeeee; }
       }
       @media tv-template and (tv-theme:dark) {
-        .banner { background-color:#d0d0d0; }
+      .banner { background-color:#303030; }
       }
     </style>
   </head>
