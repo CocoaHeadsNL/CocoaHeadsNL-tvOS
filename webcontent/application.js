@@ -7,7 +7,8 @@
 //  Copyright © 2018 CocoaHeadsNL. All rights reserved.
 //
 
-var baseURL;
+var VideoURL;
+var ContentURL;
 
 function loadingTemplate() {
     var loadingDoc = "<document><loadingTemplate><activityIndicator><text>Loading Page</text></activityIndicator></loadingTemplate></document>";
@@ -78,7 +79,7 @@ function handleSelectEvent(event) {
     if (!targetURL) {
         return;
     }
-    targetURL = baseURL + targetURL;
+    targetURL = ContentURL + targetURL;
     
     if (selectedElement.tagName == "menuItem") {
         updateMenuItem(selectedElement, targetURL);
@@ -89,7 +90,7 @@ function handleSelectEvent(event) {
 }
 
 function playMedia(extension, mediaType) {
-    var videourl = baseURL + extension;
+    var videourl = VideoURL + extension;
     var singleVideo = new MediaItem(mediaType, videourl);
     var videoList = new Playlist();
     videoList.push(singleVideo);
@@ -99,8 +100,9 @@ function playMedia(extension, mediaType) {
 }
 
 App.onLaunch = function(options) {
-    baseURL = options.BASEURL;
-    var templateURL = baseURL + "templates/menubar.xml";
+    VideoURL = options.VideoURL;
+    ContentURL = options.ContentURL;
+    var templateURL = ContentURL + "templates/menubar.xml";
     loadAndPushDocument(templateURL);
 }
 

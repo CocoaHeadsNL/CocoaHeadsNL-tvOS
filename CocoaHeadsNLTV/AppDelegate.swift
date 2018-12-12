@@ -14,10 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     var window: UIWindow?
     var appController: TVApplicationController?
     
-    // tvBaseURL points to a server on your local machine. To create a local server for testing purposes, use the following command inside your project folder from the Terminal app: ruby -run -ehttpd . -p9001. See NSAppTransportSecurity for information on using a non-secure server.
-    static let tvBaseURL = "https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/"
-    //static let tvBaseURL = "http://localhost:9001/"
-    static let tvBootURL = "\(AppDelegate.tvBaseURL)application.js"
+    // tvVideoURL points to the server where the video files are located
+    static let tvVideoURL = "https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/"
+    
+    // tvContentURL points to the server where the webcontent files are located
+    var tvContentURL = tvVideoURL
     
     // MARK: Javascript Execution Helper
     
@@ -34,6 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     // MARK: UIApplicationDelegate
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        // Uncomment the following line to enable the app to load webcontent locally
+        // See https://github.com/CocoaHeadsNL/CocoaHeadsNL-tvOS/blob/master/README.md for more information
+        //tvContentURL = "http://localhost:9001/"
+
+        // The URL where the application boot loader JS file is located
+        let tvBootURL = "\(tvContentURL)application.js"
+
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
@@ -41,12 +50,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         let appControllerContext = TVApplicationControllerContext()
         
         // The JavaScript URL is used to create the JavaScript context for your TVMLKit application. Although it is possible to separate your JavaScript into separate files, to help reduce the launch time of your application we recommend creating minified and compressed version of this resource. This will allow for the resource to be retrieved and UI presented to the user quickly.
-        if let javaScriptURL = URL(string: AppDelegate.tvBootURL) {
+        if let javaScriptURL = URL(string: tvBootURL) {
             appControllerContext.javaScriptApplicationURL = javaScriptURL
         }
+
+        // This needs to stay here for compatibility with the old JS file
+        // Can be removed in the near future when no old JS file is cached anymore
+        appControllerContext.launchOptions["BASEURL"] = tvContentURL as NSString
         
-        appControllerContext.launchOptions["BASEURL"] = AppDelegate.tvBaseURL as NSString
-        
+        appControllerContext.launchOptions["VideoURL"] = AppDelegate.tvVideoURL as NSString
+        appControllerContext.launchOptions["ContentURL"] = tvContentURL as NSString
+
         if let launchOptions = launchOptions {
             for (kind, value) in launchOptions {
                 appControllerContext.launchOptions[kind.rawValue] = value
