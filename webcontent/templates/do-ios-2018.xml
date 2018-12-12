@@ -14,7 +14,7 @@
   </head>
   <listTemplate>
     <banner class="banner">
-      <badge src="resource://Logo-DoiOS" class="logo" width="291" height="159" />
+      <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/images/logo-do-ios.png" class="logo" width="291" height="159" />
     </banner>
 
     <list>

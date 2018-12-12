@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A0E3F062020FBDC00828440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E3F052020FBDC00828440 /* AppDelegate.swift */; };
 		4A0E3F092020FBDC00828440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E3F082020FBDC00828440 /* Assets.xcassets */; };
+		A94F37DA21C11A6C00F57AD6 /* logo-do-ios.png in Resources */ = {isa = PBXBuildFile; fileRef = A94F37D921C11A6C00F57AD6 /* logo-do-ios.png */; };
 		A97BB43021BD9A98007B7F3A /* menubar.xml in Resources */ = {isa = PBXBuildFile; fileRef = A97BB42F21BD9A98007B7F3A /* menubar.xml */; };
 		A97BB43221BD9ED0007B7F3A /* meetups.xml in Resources */ = {isa = PBXBuildFile; fileRef = A97BB43121BD9ED0007B7F3A /* meetups.xml */; };
 		A97BB43421BD9EEF007B7F3A /* do-ios-2018.xml in Resources */ = {isa = PBXBuildFile; fileRef = A97BB43321BD9EEF007B7F3A /* do-ios-2018.xml */; };
@@ -20,6 +21,7 @@
 		4A0E3F052020FBDC00828440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A0E3F082020FBDC00828440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0E3F0A2020FBDC00828440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94F37D921C11A6C00F57AD6 /* logo-do-ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-do-ios.png"; sourceTree = "<group>"; };
 		A97BB42F21BD9A98007B7F3A /* menubar.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = menubar.xml; sourceTree = "<group>"; };
 		A97BB43121BD9ED0007B7F3A /* meetups.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = meetups.xml; sourceTree = "<group>"; };
 		A97BB43321BD9EEF007B7F3A /* do-ios-2018.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "do-ios-2018.xml"; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 			path = CocoaHeadsNLTV;
 			sourceTree = "<group>";
 		};
+		A94F37D821C1190500F57AD6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A94F37D921C11A6C00F57AD6 /* logo-do-ios.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		A97BB42E21BD9A31007B7F3A /* templates */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		E2092A422025D4E9004E98BC /* webcontent */ = {
 			isa = PBXGroup;
 			children = (
+				A94F37D821C1190500F57AD6 /* images */,
 				A97BB42E21BD9A31007B7F3A /* templates */,
 				E2092A442025D513004E98BC /* application.js */,
 			);
@@ -144,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97BB43021BD9A98007B7F3A /* menubar.xml in Resources */,
+				A94F37DA21C11A6C00F57AD6 /* logo-do-ios.png in Resources */,
 				4A0E3F092020FBDC00828440 /* Assets.xcassets in Resources */,
 				E2092A462025D513004E98BC /* application.js in Resources */,
 				A97BB43421BD9EEF007B7F3A /* do-ios-2018.xml in Resources */,
