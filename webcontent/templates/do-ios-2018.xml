@@ -34,6 +34,17 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-bas-broek.m3u8', 'video')">
+          <title>Writing better APIs</title>
+          <subtitle>Bas Broek</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-bas-broek.jpg" width="857" height="482" />
+              <title>Writing better APIs</title>
+              <description>In this talk Bas Broek emphasises how important it is to design clean APIs and document them. Not just if you are writing a framework but also when writing your app.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
         <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-abn-amro-mobile-team.m3u8', 'video')">
           <title>Our journey to automated releases</title>
           <subtitle>ABN-AMRO Mobile Team</subtitle>
@@ -42,6 +53,17 @@
               <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-abn-amro-mobile-team.jpg" width="857" height="482" />
               <title>Our journey to automated releases</title>
               <description>In this talk four developers of the ABN-AMRO Mobile Team show how they have set up their release pipeline. They used to use Gitflow but because of a lot of long-lived branches they switched to a much simpler model with feature toggles. Their pipeline is fully automated with a range of tools that are run from Fastlane.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-alexander-griekspoor.m3u8', 'video')">
+          <title>Reversie Indie, Agenda App</title>
+          <subtitle>Alexander Griekspoor</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-alexander-griekspoor.jpg" width="857" height="482" />
+              <title>Reversie Indie, Agenda App</title>
+              <description>Alexander talks about how he got started in app development as an indie developing the app Paper. After winning an Apple design award and selling the app to a publisher and working for them for a while he left and became an indie again. He then started his next big project: the Agenda app.</description>
             </lockup>
           </relatedContent>
         </listItemLockup>
@@ -64,6 +86,17 @@
               <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-daniel-steinberg.jpg" width="857" height="482" />
               <title>Siri shortcuts</title>
               <description>In this talk Daniel Steinberg shows how you can implement functionality from your own app into a Siri Shortcut. He shows a simple example and demonstrates how you can even persist data in between running your app from a Siri Shortcut and standalone.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-david-broza.m3u8', 'video')">
+          <title>Mobile app architecture</title>
+          <subtitle>David Broza</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-david-broza.jpg" width="857" height="482" />
+              <title>Mobile app architecture</title>
+              <description>In this talk David talks about the mobile team at ANWB were struggling with the question what architecture to use. Go for the latest trendy framework or build a solid foundation and architecture internally. They choose the latter and David shows what they came up with.</description>
             </lockup>
           </relatedContent>
         </listItemLockup>
