@@ -21,6 +21,45 @@
 
       <section>
         <header>
+          <title>January 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-01/2019-01-antoine-van-der-lee.m3u8', 'video')">
+          <title>Speeding up as an iOS developer</title>
+          <subtitle>Antoine van der Lee</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-01/2019-01-antoine-van-der-lee.jpg" width="857" height="482" />
+              <title>Speeding up as an iOS developer</title>
+              <description>In this talk Antoine shares some tips on the personal, organizational and programming level on how to become a better iOS developer and speed up your workflow.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-01/2019-01-felipe-florencio-garcia.m3u8', 'video')">
+          <title>Theming with extensions and JSON</title>
+          <subtitle>Felipe Florencio Garcia</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-01/2019-01-felipe-florencio-garcia.jpg" width="857" height="482" />
+              <title>Theming with extensions and JSON</title>
+              <description>Felipe shares a concept on how he has implemented theming in an app he has worked on. By using extensions on UI elements and simple JSON configuration files hw shows how easy it can be to add theming support to the CocoaHeadsNL app.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-01/2019-01-abn-amro-tikkie.m3u8', 'video')">
+          <title>Tikkie - Growing beyond the app</title>
+          <subtitle>Rajeev Bhatia &amp; Sida Nakrosyte</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-01/2019-01-abn-amro-tikkie.jpg" width="857" height="482" />
+              <title>Tikkie - Growing beyond the app</title>
+              <description>Rajeev and Sida from the ABN AMRO Tikkie team explain how quickly the Tikkie app has evolved and became a big success. How they started with a minimum viable product and quickly ran into a scaling issues on the backend that forced them to rethink their infrastructure.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>November 2018</title>
         </header>
         <listItemLockup onselect="playMedia('video/2018-11/2018-11-jeroen-bouma.m3u8', 'video')">
