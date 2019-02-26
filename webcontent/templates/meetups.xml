@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>February 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-02/2019-02-niels-van-hoorn.m3u8', 'video')">
+          <title>Understanding Artificial Neural Networks</title>
+          <subtitle>Niels van Hoorn</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-02/2019-02-niels-van-hoorn.jpg" width="857" height="482" />
+              <title>Understanding Artificial Neural Networks</title>
+              <description>In this talk Niels introduces us to the world of artificial intelligence and machine learning with a talk about neural networks. He ends with a demonstration how a neural network can be teached to detect colors.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-02/2019-02-bart-den-hollander.m3u8', 'video')">
+          <title>Integrating Snapshot testing</title>
+          <subtitle>Bart den Hollander</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-02/2019-02-bart-den-hollander.jpg" width="857" height="482" />
+              <title>Integrating Snapshot testing</title>
+              <description>Bart shows how snapshot testing can be used in a CI/CD pipeline to detect possibly unwanted changes in the UI of your application. He also compares two well known snapshot testing frameworks.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>January 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-01/2019-01-antoine-van-der-lee.m3u8', 'video')">
