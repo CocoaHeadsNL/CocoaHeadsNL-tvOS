@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>April 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-04/2019-04-rogier-van-den-brink-ennio-brands.m3u8', 'video')">
+          <title>Machine Learning In Apps</title>
+          <subtitle>Rogier van den Brink and Ennio Brands</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-04/2019-04-rogier-van-den-brink-ennio-brands.jpg" width="857" height="482" />
+              <title>Machine Learning In Apps</title>
+              <description>After a small introduction about Incentro by Ennio, Rogier dives into the details on how they used machine learning in the app of the Coop supermarket to implement a product scanner that can not only scan barcodes but also recognize real food.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-04/2019-04-ellen-shapiro.m3u8', 'video')">
+          <title>How To Properly Allocate The Fucks You Give</title>
+          <subtitle>Ellen Shapiro</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-04/2019-04-ellen-shapiro.jpg" width="857" height="482" />
+              <title>How To Properly Allocate The Fucks You Give</title>
+              <description>In this meta talk Ellen explains that it is important to properly allocate the fucks in your life. A fuck being a metaphor for a pointer to something you care about in your personal or professional life.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>March 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-03/2019-03-jaap-mengers.m3u8', 'video')">
