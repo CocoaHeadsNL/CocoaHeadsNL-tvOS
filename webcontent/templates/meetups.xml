@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>May 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-04/2019-04-rogier-van-den-brink-ennio-brands.m3u8', 'video')">
+          <title>Rx Driven Development</title>
+          <subtitle>Lammert Westerhoff</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-05/2019-05-lammert-westerhoff.jpg" width="857" height="482" />
+              <title>Rx Driven Development</title>
+              <description>Lammert Westerhoff shows an example of how he has used Rx in a data rich application to make the app respond to real-time changes. By using a simple JSON file format for its data store as it also makes development and testing a lot easier.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-05/2019-05-lammert-westerhoff.m3u8', 'video')">
+          <title>Native Serialization in iOS</title>
+          <subtitle>Dmitrii Ivanov</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-05/2019-05-dmitrii-ivanov.jpg" width="857" height="482" />
+              <title>Native Serialization in iOS</title>
+              <description>In this talks Dmitrii shows a couple of options on how to use native iOS SDK options to serialize objects. He compares them and talks about the advantages and disadvantages.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>April 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-04/2019-04-rogier-van-den-brink-ennio-brands.m3u8', 'video')">
