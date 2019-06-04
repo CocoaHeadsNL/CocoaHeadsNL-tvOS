@@ -23,7 +23,7 @@
         <header>
           <title>May 2019</title>
         </header>
-        <listItemLockup onselect="playMedia('video/2019-04/2019-04-rogier-van-den-brink-ennio-brands.m3u8', 'video')">
+        <listItemLockup onselect="playMedia('video/2019-05/2019-05-lammert-westerhoff.m3u8', 'video')">
           <title>Rx Driven Development</title>
           <subtitle>Lammert Westerhoff</subtitle>
           <relatedContent>
@@ -34,7 +34,7 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-        <listItemLockup onselect="playMedia('video/2019-05/2019-05-lammert-westerhoff.m3u8', 'video')">
+        <listItemLockup onselect="playMedia('video/2019-05/2019-05-dmittri-ivanov.m3u8', 'video')">
           <title>Native Serialization in iOS</title>
           <subtitle>Dmitrii Ivanov</subtitle>
           <relatedContent>
