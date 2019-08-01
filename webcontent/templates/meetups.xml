@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>July 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-07/2019-07-peter-ijlst.m3u8', 'video')">
+          <title>Dependency Injection &amp; Application Architecture</title>
+          <subtitle>Peter IJlst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-07/2019-07-peter-ijlst.jpg" width="857" height="482" />
+              <title>Dependency Injection &amp; Application Architecture</title>
+              <description>After a short primer in dependency injection, Peter dives deep in several application architectures based on Swinject and describes the pro's and con's of the solutions.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-07/2019-07-juan-carlos-ospina-gonzalez.m3u8', 'video')">
+          <title>Software development, parenthood, childlessnes and family life</title>
+          <subtitle>Juan Carlos Ospina Gonzalez</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-07/2019-07-juan-carlos-ospina-gonzalez.jpg" width="857" height="482" />
+              <title>Software development, parenthood, childlessnes and family life</title>
+              <description>In this meta talk Juan Carlos talks about the difficulties of combining family live with being a software developer. He also highlights how few women there are in this profession and shows examples of how this affects the products that are created.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>May 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-05/2019-05-lammert-westerhoff.m3u8', 'video')">
