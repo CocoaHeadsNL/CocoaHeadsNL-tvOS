@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>August 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-08/2019-08-felipe-garcia.m3u8', 'video')">
+          <title>Swinject to handle dependency injection</title>
+          <subtitle>Felipe Garcia</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-08/2019-08-felipe-garcia.jpg" width="857" height="482" />
+              <title>Swinject to handle dependency injection</title>
+              <description>Felipe takes us for a deep dive into Swinject and shows code examples of how to use Swinject. He touches topics like containers, object scopes and how to register and resolve using arguments.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-08/2019-08-pim-coumans.m3u8', 'video')">
+          <title>Making OK Videos</title>
+          <subtitle>Pim Coumans</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-08/2019-08-pim-coumans.jpg" width="857" height="482" />
+              <title>Making OK Videos</title>
+              <description>Pim shares his experiences on making a the app OK Videos. He explains why he made it, what problems they ran into when they wanted to instantly record video and how they solved the audio synchronisation.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>July 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-07/2019-07-peter-ijlst.m3u8', 'video')">
