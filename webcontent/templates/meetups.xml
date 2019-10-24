@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>October 2019</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2019-10/2019-10-lucas-twisk.m3u8', 'video')">
+          <title>Introducing Localicious</title>
+          <subtitle>Lucas Twisk</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-10/2019-10-lucas-twisk.jpg" width="857" height="482" />
+              <title>Introducing Localicious</title>
+              <description>With this talk the mobile development team of Picnic open sources their custom made localization library Localicious. Lucas explains what their goals were and how they solved their problems.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2019-10/2019-10-marius-de-reus.m3u8', 'video')">
+          <title>Breaking down the monolith</title>
+          <subtitle>Marius de Reus</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2019-10/2019-10-marius-de-reus.jpg" width="857" height="482" />
+              <title>Breaking down the monolith</title>
+              <description>With over 8 years of development the Albelli Photo Book app had become a large monolith. Marius explains how they broke that down and mode this macOS application more modular and better unit-testable.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>September 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-09/2019-09-maxim-smirnov.m3u8', 'video')">
