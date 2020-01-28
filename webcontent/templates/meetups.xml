@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>January 2020</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2020-01/2020-01-lammert-westerhoff.m3u8', 'video')">
+          <title>Building a native iOS app with Kotlin Multiplatform</title>
+          <subtitle>Lammert Westerhoff</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-01/2020-01-lammert-westerhoff.jpg" width="857" height="482" />
+              <title>Building a native iOS app with Kotlin Multiplatform</title>
+              <description>Lammert shows how you can build platform native apps for both Android and iOS using Kotlin. The apps will share some common code and on the iOS it's easy to interact with Swift code. It will all still compile down to native code.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2020-01/2020-01-jeroen-leenarts.m3u8', 'video')">
+          <title>Building iOS apps with Github Actions</title>
+          <subtitle>Jeroen Leenarts</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-01/2020-01-jeroen-leenarts.jpg" width="857" height="482" />
+              <title>Building iOS apps with Github Actions</title>
+              <description>Jeroen shows how you can leverage the recently introduced Github Actions to create test, build and deploy pipelines. As Github supports native macOS machines it's possible to do the entire build process in the cloud.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>November 2019</title>
         </header>
         <listItemLockup onselect="playMedia('video/2019-11/2019-11-wetransfer-team.m3u8', 'video')">
