@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>April 2020</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2020-04/2020-04-josh-holtz.m3u8', 'video')">
+          <title>Implementing fastlane from nothing to App Store</title>
+          <subtitle>Josh Holtz</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-04/2020-04-josh-holtz.jpg" width="857" height="482" />
+              <title>Implementing fastlane from nothing to App Store</title>
+              <description>During a live coding session from Chicago (USA) the lead maintainer of fastlane demonstrates how easy it is to set up fastlane to automate the process of building, signing and uploading your app to the App Store.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>March 2020</title>
         </header>
         <listItemLockup onselect="playMedia('video/2020-03/2020-03-antoine-van-der-lee.m3u8', 'video')">
