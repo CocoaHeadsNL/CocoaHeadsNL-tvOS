@@ -29,6 +29,12 @@ output_filename=""
 # An optional sub-directory, this can be used for special events.
 sub_dir=""
 
+# The lowest framerate to use
+framerate_low="25"
+
+# The highest framerate to use
+framerate_high="50"
+
 # Process a single video file. This will encode the video, split it into segments for HLS and generate the necessary m3u8 playlist files.
 # Parameters:
 # $1 = Input filename
@@ -103,19 +109,19 @@ ffmpeg_preset()
 {
     case $1 in
 
-        # AVC - 640 x 360 @ 25fps
+        # AVC - 640 x 360 @ 25/30fps
         1) echo "-c:a aac -ac 2 -b:a 64k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v baseline -level 3.1 -maxrate $(bitrate_for_preset $1)K -bufsize 3M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
-        # AVC - 960 x 540 @ 25fps
+        # AVC - 960 x 540 @ 25/30fps
         2) echo "-c:a aac -ac 2 -b:a 64k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate $(bitrate_for_preset $1)K -bufsize 5M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
-        # AVC - 1280 x 720 @ 25fps
+        # AVC - 1280 x 720 @ 25/30fps
         3) echo "-c:a aac -ac 2 -b:a 96k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate $(bitrate_for_preset $1)K -bufsize 8M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
-        # AVC - 1280 x 720 @ 50fps
+        # AVC - 1280 x 720 @ 50/60fps
         4) echo "-c:a aac -ac 2 -b:a 96k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate $(bitrate_for_preset $1)K -bufsize 10M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
-        # AVC - 1920 x 1280 @ 50fps
+        # AVC - 1920 x 1280 @ 50/60fps
         5) echo "-c:a aac -ac 2 -b:a 128k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v high -level 4.2 -maxrate $(bitrate_for_preset $1)K -bufsize 16M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
     esac
@@ -136,11 +142,11 @@ framerate_for_preset()
 {
     case $1 in
 
-        # 25fps
-        [1-3]) echo "25";;
+        # Low framerates for these presets
+        [1-3]) echo "$framerate_low";;
 
-        # 50fps
-        [4-5]) echo "50";;
+        # High framerate for these presets
+        [4-5]) echo "$framerate_high";;
 
     esac
 }
@@ -152,20 +158,20 @@ resolution_for_preset()
 {
     case $1 in
 
-        # AVC - 640 x 360 @ 25fps
+        # AVC - 640 x 360 @ 25/30fps
         1) echo "640x360";;
 
-        # AVC - 960 x 540 @ 25fps
+        # AVC - 960 x 540 @ 25/30fps
         2) echo "960x540";;
 
-        # AVC - 1280 x 720 @ 25fps
+        # AVC - 1280 x 720 @ 25/30fps
         3) echo "1280x720";;
 
-        # AVC - 1280 x 720 @ 50fps
+        # AVC - 1280 x 720 @ 50/60fps
         4) echo "1280x720";;
 
-        # AVC - 1920 x 1280 @ 50fps
-        5) echo "1920x1080" ;;
+        # AVC - 1920 x 1280 @ 50/60fps
+        5) echo "1920x1080";;
 
     esac
 }
@@ -190,20 +196,20 @@ bitrate_for_preset()
 {
     case $1 in
 
-        # AVC - 640 x 360 @ 25fps
+        # AVC - 640 x 360 @ 25/30fps
         1) echo "800";;
 
-        # AVC - 960 x 540 @ 25fps
+        # AVC - 960 x 540 @ 25/30fps
         2) echo "2000";;
 
-        # AVC - 1280 x 720 @ 25fps
+        # AVC - 1280 x 720 @ 25/30fps
         3) echo "3000";;
 
-        # AVC - 1280 x 720 @ 50fps
+        # AVC - 1280 x 720 @ 50/60fps
         4) echo "4500";;
 
-        # AVC - 1920 x 1280 @ 50fps
-        5) echo "7800" ;;
+        # AVC - 1920 x 1280 @ 50/60fps
+        5) echo "7800";;
 
     esac
 }
@@ -330,12 +336,14 @@ show_usage()
     printf "\n$(headercolor)Parameters:$(nocolor)\n"
     printf "  $(parametercolor)input-file$(nocolor)              The input video file to process.\n"
     printf "\n$(headercolor)Options:$(nocolor)\n"
-    printf "  $(optioncolor)-o$(nocolor)  $(dimmedcolor)(or $(optioncolor)--output-file$(dimmedcolor))$(nocolor)  The base name for the output file.\n"
-    printf "  $(optioncolor)-m$(nocolor)  $(dimmedcolor)(or $(optioncolor)--month$(dimmedcolor))$(nocolor)        The year of the recording of the video.\n"
-    printf "  $(optioncolor)-y$(nocolor)  $(dimmedcolor)(or $(optioncolor)--year$(dimmedcolor))$(nocolor)         The month of the recording of the video.\n"
-    printf "  $(optioncolor)-s$(nocolor)  $(dimmedcolor)(or $(optioncolor)--sub-dir$(dimmedcolor))$(nocolor)      Optional sub-directory for output.\n"
-    printf "  $(optioncolor)-v$(nocolor)  $(dimmedcolor)(or $(optioncolor)--version$(dimmedcolor))$(nocolor)      Show the version number.\n"
-    printf "  $(optioncolor)-h$(nocolor)  $(dimmedcolor)(or $(optioncolor)--help$(dimmedcolor))$(nocolor)         Show this help screen.\n"
+    printf "  $(optioncolor)-o$(nocolor)   $(dimmedcolor)(or $(optioncolor)--output-file$(dimmedcolor))$(nocolor)     The base name for the output file.\n"
+    printf "  $(optioncolor)-m$(nocolor)   $(dimmedcolor)(or $(optioncolor)--month$(dimmedcolor))$(nocolor)           The year of the recording of the video.\n"
+    printf "  $(optioncolor)-y$(nocolor)   $(dimmedcolor)(or $(optioncolor)--year$(dimmedcolor))$(nocolor)            The month of the recording of the video.\n"
+    printf "  $(optioncolor)-s$(nocolor)   $(dimmedcolor)(or $(optioncolor)--sub-dir$(dimmedcolor))$(nocolor)         Optional sub-directory for output.\n"
+    printf "  $(optioncolor)-fl$(nocolor)  $(dimmedcolor)(or $(optioncolor)--framerate-low$(dimmedcolor))$(nocolor)   The lowest framerate to use.\n"
+    printf "  $(optioncolor)-fh$(nocolor)  $(dimmedcolor)(or $(optioncolor)--framerate-high$(dimmedcolor))$(nocolor)  The highest framerate to use.\n"
+    printf "  $(optioncolor)-v$(nocolor)   $(dimmedcolor)(or $(optioncolor)--version$(dimmedcolor))$(nocolor)         Show the version number.\n"
+    printf "  $(optioncolor)-h$(nocolor)   $(dimmedcolor)(or $(optioncolor)--help$(dimmedcolor))$(nocolor)            Show this help screen.\n"
     printf "\n"
 }
 
@@ -387,6 +395,14 @@ while [[ $# -gt 0 ]]; do
 
         -s | --sub-dir)
             sub_dir="$2"
+            shift;;
+
+        -fl | --framerate_low)
+            framerate_low="$2"
+            shift;;
+
+        -fh | --framerate_high)
+            framerate_high="$2"
             shift;;
 
         -h | --help)
