@@ -78,7 +78,7 @@ encode_video()
 # $2 = Base output filename
 segment_video()
 {
-    mediafilesegmenter -base-url "$baseurl/$1/" -file-base "$1/" -index-file "$(add_file_extension "$2" 'm3u8')" -iframe-index-file "$(add_file_extension "$2" "iframes.m3u8")" -base-media-file-name "$2-" "$1/$(add_file_extension "$2" "mp4")"
+    mediafilesegmenter -q -base-url "$baseurl/$1/" -file-base "$1/" -index-file "$(add_file_extension "$2" 'm3u8')" -iframe-index-file "$(add_file_extension "$2" "iframes.m3u8")" -base-media-file-name "$2-" "$1/$(add_file_extension "$2" "mp4")"
 }
 
 # Creates the master playlist from the individual m3u8 playlist created for each resolution.
