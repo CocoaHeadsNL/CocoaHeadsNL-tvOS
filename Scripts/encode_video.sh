@@ -301,6 +301,19 @@ create_output_filename()
     output_filename="$(echo -n $sanitized | tr 'A-Z' 'a-z')"
 }
 
+# Returns the given default value in case the given first parameter is an empty string. If not, it returns the first parameter within single quotes.
+# Parameters:
+# $1 = The parameter to check if it's empty.
+# $2 = The default value to use
+default_for_quoted()
+{
+    if [ "$1" == "" ]; then
+        echo "$2"
+    else
+        echo "'$1'"
+    fi
+}
+
 # Retuns the ANSI code to switch back to no color
 nocolor()
 {
@@ -351,12 +364,12 @@ show_usage()
     printf "\n$(headercolor)Parameters:$(nocolor)\n"
     printf "  $(parametercolor)input-file$(nocolor)              The input video file to process.\n"
     printf "\n$(headercolor)Options:$(nocolor)\n"
-    printf "  $(optioncolor)-o$(nocolor)   $(dimmedcolor)(or $(optioncolor)--output-file$(dimmedcolor))$(nocolor)     The base name for the output file.\n"
-    printf "  $(optioncolor)-m$(nocolor)   $(dimmedcolor)(or $(optioncolor)--month$(dimmedcolor))$(nocolor)           The year of the recording of the video.\n"
-    printf "  $(optioncolor)-y$(nocolor)   $(dimmedcolor)(or $(optioncolor)--year$(dimmedcolor))$(nocolor)            The month of the recording of the video.\n"
-    printf "  $(optioncolor)-s$(nocolor)   $(dimmedcolor)(or $(optioncolor)--sub-dir$(dimmedcolor))$(nocolor)         Optional sub-directory for output.\n"
-    printf "  $(optioncolor)-fl$(nocolor)  $(dimmedcolor)(or $(optioncolor)--framerate-low$(dimmedcolor))$(nocolor)   The lowest framerate to use.\n"
-    printf "  $(optioncolor)-fh$(nocolor)  $(dimmedcolor)(or $(optioncolor)--framerate-high$(dimmedcolor))$(nocolor)  The highest framerate to use.\n"
+    printf "  $(optioncolor)-o$(nocolor)   $(dimmedcolor)(or $(optioncolor)--output-file$(dimmedcolor))$(nocolor)     The base name for the output file (default is based on input filename).\n"
+    printf "  $(optioncolor)-m$(nocolor)   $(dimmedcolor)(or $(optioncolor)--month$(dimmedcolor))$(nocolor)           The year of the recording of the video (default is $(default_for_quoted "$year" "none")).\n"
+    printf "  $(optioncolor)-y$(nocolor)   $(dimmedcolor)(or $(optioncolor)--year$(dimmedcolor))$(nocolor)            The month of the recording of the video (default is $(default_for_quoted "$month" "none")).\n"
+    printf "  $(optioncolor)-s$(nocolor)   $(dimmedcolor)(or $(optioncolor)--sub-dir$(dimmedcolor))$(nocolor)         Optional sub-directory for output (default is $(default_for_quoted "$sub_dir" "none")).\n"
+    printf "  $(optioncolor)-fl$(nocolor)  $(dimmedcolor)(or $(optioncolor)--framerate-low$(dimmedcolor))$(nocolor)   The lowest framerate to use (default is $(default_for_quoted "$framerate_low" "none")).\n"
+    printf "  $(optioncolor)-fh$(nocolor)  $(dimmedcolor)(or $(optioncolor)--framerate-high$(dimmedcolor))$(nocolor)  The highest framerate to use (default is $(default_for_quoted "$framerate_high" "none")).\n"
     printf "  $(optioncolor)-v$(nocolor)   $(dimmedcolor)(or $(optioncolor)--version$(dimmedcolor))$(nocolor)         Show the version number.\n"
     printf "  $(optioncolor)-h$(nocolor)   $(dimmedcolor)(or $(optioncolor)--help$(dimmedcolor))$(nocolor)            Show this help screen.\n"
     printf "\n"
