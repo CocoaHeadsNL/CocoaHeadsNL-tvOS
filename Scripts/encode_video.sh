@@ -62,7 +62,8 @@ process_video()
 encode_video()
 {
     mkdir -p "$2"
-    ffmpeg -y -i "$1" $(ffmpeg_preset $4) "$2/$3"
+    printf "\nEncoding video to: $(ffmpeg_preset_description $4)\n"
+    ffmpeg -y -v error -stats -i "$1" $(ffmpeg_preset $4) "$2/$3"
 }
 
 # Splits a video file into HLS segments and generate the m3u8 playlist index files.
@@ -103,21 +104,29 @@ ffmpeg_preset()
     case $1 in
 
         # AVC - 640 x 360 @ 25fps
-        1) echo "-c:a aac -ac 2 -b:a 64k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v baseline -level 3.1 -maxrate 800K -bufsize 3M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
+        1) echo "-c:a aac -ac 2 -b:a 64k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v baseline -level 3.1 -maxrate $(bitrate_for_preset $1)K -bufsize 3M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
         # AVC - 960 x 540 @ 25fps
-        2) echo "-c:a aac -ac 2 -b:a 64k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate 2000K -bufsize 5M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
+        2) echo "-c:a aac -ac 2 -b:a 64k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate $(bitrate_for_preset $1)K -bufsize 5M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
         # AVC - 1280 x 720 @ 25fps
-        3) echo "-c:a aac -ac 2 -b:a 96k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate 3000K -bufsize 8M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
+        3) echo "-c:a aac -ac 2 -b:a 96k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate $(bitrate_for_preset $1)K -bufsize 8M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
         # AVC - 1280 x 720 @ 50fps
-        4) echo "-c:a aac -ac 2 -b:a 96k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate 4500K -bufsize 10M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
+        4) echo "-c:a aac -ac 2 -b:a 96k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v main -level 3.2 -maxrate $(bitrate_for_preset $1)K -bufsize 10M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
         # AVC - 1920 x 1280 @ 50fps
-        5) echo "-c:a aac -ac 2 -b:a 128k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v high -level 4.2 -maxrate 7800K -bufsize 16M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
+        5) echo "-c:a aac -ac 2 -b:a 128k -ar 48000 -c:v libx264 -flags +cgop -pix_fmt yuv420p -profile:v high -level 4.2 -maxrate $(bitrate_for_preset $1)K -bufsize 16M -crf 20 -r $(framerate_for_preset $1) -f mp4 -s $(resolution_for_preset $1)";;
 
     esac
+}
+
+# Returns a description for a specific preset
+# Parameters:
+# $1 = The preset number
+ffmpeg_preset_description()
+{
+    echo "MPEG4 AVC - $(resolution_for_preset $1) @ $(framerate_for_preset $1)fps (max. $(bitrate_for_preset $1) kbits/s)"
 }
 
 # Returns a string that represents the frame rate to use for the given preset
@@ -170,6 +179,31 @@ codec_for_preset()
 
         # AVC
         [1-5]) echo "avc";;
+
+    esac
+}
+
+# Returns the maximum bitrate in kbit/s to use for the given preset
+# Parameters:
+# $1 = The preset number
+bitrate_for_preset()
+{
+    case $1 in
+
+        # AVC - 640 x 360 @ 25fps
+        1) echo "800";;
+
+        # AVC - 960 x 540 @ 25fps
+        2) echo "2000";;
+
+        # AVC - 1280 x 720 @ 25fps
+        3) echo "3000";;
+
+        # AVC - 1280 x 720 @ 50fps
+        4) echo "4500";;
+
+        # AVC - 1920 x 1280 @ 50fps
+        5) echo "7800" ;;
 
     esac
 }
