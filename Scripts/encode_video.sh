@@ -6,7 +6,7 @@
 # then be used to generated HLS file segments and m3u8 playlists.
 #
 # Created by Marco Miltenburg
-# Copyright © 2018 Stichting CocoaHeadsNL. All rights reserved.
+# Copyright © 2018-2020 Stichting CocoaHeadsNL. All rights reserved.
 # 
 # License: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 #
