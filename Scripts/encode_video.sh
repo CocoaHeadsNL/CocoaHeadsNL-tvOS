@@ -132,7 +132,7 @@ ffmpeg_preset()
 # $1 = The preset number
 ffmpeg_preset_description()
 {
-    echo "MPEG4 AVC - $(resolution_for_preset $1) @ $(framerate_for_preset $1)fps (max. $(bitrate_for_preset $1) kbits/s)"
+    echo "H.264 MPEG-4 AVC - $(resolution_for_preset $1) @ $(framerate_for_preset $1)fps (max. $(bitrate_for_preset $1) kbits/s)"
 }
 
 # Returns a string that represents the frame rate to use for the given preset
