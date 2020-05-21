@@ -47,13 +47,17 @@ process_video()
     encode_video "$1" "$(output_directory_for_preset 1 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 1
     encode_video "$1" "$(output_directory_for_preset 2 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 2
     encode_video "$1" "$(output_directory_for_preset 3 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 3
-    encode_video "$1" "$(output_directory_for_preset 4 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 4
+    if [ "$framerate_low" != "$framerate_high" ]; then
+        encode_video "$1" "$(output_directory_for_preset 4 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 4
+    fi
     encode_video "$1" "$(output_directory_for_preset 5 $2 $3 $5)" "$(output_filename_with_extension $2 $3 $4 "mp4")" 5
 
     segment_video "$(output_directory_for_preset 1 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
     segment_video "$(output_directory_for_preset 2 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
     segment_video "$(output_directory_for_preset 3 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
-    segment_video "$(output_directory_for_preset 4 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
+    if [ "$framerate_low" != "$framerate_high" ]; then
+        segment_video "$(output_directory_for_preset 4 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
+    fi
     segment_video "$(output_directory_for_preset 5 $2 $3 $5)" "$(base_output_filename $2 $3 "$4")"
 
     create_master_playlist $2 $3 "$(base_output_filename $2 $3 "$4")" "$5"
@@ -90,16 +94,27 @@ segment_video()
 create_master_playlist()
 {
     variantplaylistcreator -o "$(output_directory $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" \
-        "$baseurl/$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 3 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 1 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 2 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 4 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" "$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'plist')" \
-        "$baseurl/$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'iframes.m3u8')" "$(output_directory_for_preset 5 $1 $2 $4)/$(add_file_extension "$3" 'plist')"
+        $(variantplaylist_parameters_for_preset 3 $1 $2 $3 $4) \
+        $(variantplaylist_parameters_for_preset 1 $1 $2 $3 $4) \
+        $(variantplaylist_parameters_for_preset 2 $1 $2 $3 $4) \
+        $(variantplaylist_parameters_for_preset 4 $1 $2 $3 $4) \
+        $(variantplaylist_parameters_for_preset 5 $1 $2 $3 $4)
+}
+
+# Return the parameters to use for the variantplaylistcreater for a specific preset.
+# Parameters:
+# $1 = The preset number
+# $2 = Year
+# $3 = Month
+# $4 = Base output filename
+# $5 = Optional sub-directory, e.g. for special events
+variantplaylist_parameters_for_preset()
+{
+    # Special case for 1280 x 720 as we don't need to encode that twice when the low and high framerates are the same
+    if [ "$1" != "4" ] || [ "$framerate_low" != "$framerate_high" ]; then
+        echo "$baseurl/$(output_directory_for_preset $1 $2 $3 $5)/$(add_file_extension "$4" 'm3u8')" "$(output_directory_for_preset $1 $2 $3 $5)/$(add_file_extension "$4" 'plist')" \
+             "$baseurl/$(output_directory_for_preset $1 $2 $3 $5)/$(add_file_extension "$4" 'iframes.m3u8')" "$(output_directory_for_preset $1 $2 $3 $5)/$(add_file_extension "$4" 'plist')"
+    fi
 }
 
 # Returns the ffmpeg parameters to use for a specific preset
