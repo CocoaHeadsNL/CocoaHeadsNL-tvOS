@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>July 2020</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2020-07/2020-07-tom-lokhorst.m3u8', 'video')">
+          <title>Server Driven UI</title>
+          <subtitle>Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-07/2020-07-tom-lokhorst.jpg" width="857" height="482" />
+              <title>Server Driven UI</title>
+              <description>From the garden of his own home Tom explains how they implemented a server driven UI for the Primephonic app. Tom shows examples of screens of the app and how they implemented that as server generated JSON.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>May 2020</title>
         </header>
         <listItemLockup onselect="playMedia('video/2020-05/2020-05-daniel-steinberg.m3u8', 'video')">
