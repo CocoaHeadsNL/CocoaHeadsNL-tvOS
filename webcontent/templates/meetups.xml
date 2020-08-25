@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>Augustus 2020</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2020-08/2020-08-jozsef-vesza-juan-carlos-ospina-gonzalez.m3u8', 'video')">
+          <title>Building Combine-powered APIs</title>
+          <subtitle>József Vesza and Juan Carlos Ospina Gonzalez</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-08/2020-08-jozsef-vesza-juan-carlos-ospina-gonzalez.jpg" width="857" height="482" />
+              <title>Building Combine-powered APIs</title>
+              <description>József and Juan talk about how to wrap iOS built-in or custom APIs using Combine.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>July 2020</title>
         </header>
         <listItemLockup onselect="playMedia('video/2020-07/2020-07-tom-lokhorst.m3u8', 'video')">
