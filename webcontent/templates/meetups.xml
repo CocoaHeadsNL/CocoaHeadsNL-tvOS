@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>September 2020</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2020-09/2020-09-jon-reid.m3u8', 'video')">
+          <title>Real Refactoring</title>
+          <subtitle>Jon Reid</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-09/2020-09-jon-reid.jpg" width="857" height="482" />
+              <title>Real Refactoring</title>
+              <description>Jon takes you step-by-step through a simple example app and shows you how to refactoring the code.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2020-09/2020-09-jeroen-leenarts.m3u8', 'video')">
+          <title>Our path to microframeworks with Tuist.io</title>
+          <subtitle>Jeroen Leenarts</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-09/2020-09-jeroen-leenarts.jpg" width="857" height="482" />
+              <title>Our path to microframeworks with Tuist.io</title>
+              <description>Jeroen shows how they at Achmea changed the architecture of their app to use microframeworks with Tuist.io. He demonstrates how to create a sample app and shows the new structure of the 'Even Appen' app.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>Augustus 2020</title>
         </header>
         <listItemLockup onselect="playMedia('video/2020-08/2020-08-jozsef-vesza-juan-carlos-ospina-gonzalez.m3u8', 'video')">
