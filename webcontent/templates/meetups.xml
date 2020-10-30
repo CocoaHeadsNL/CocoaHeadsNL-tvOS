@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>October 2020</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2020-10/2020-10-donny-wals.m3u8', 'video')">
+          <title>Adopting a reactive mindset</title>
+          <subtitle>Donny Wals</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2020-10/2020-10-donny-wals.jpg" width="857" height="482" />
+              <title>Adopting a reactive mindset</title>
+              <description>With an example-driven approach, Donny helps you adopt a reactive mindset and explains what is all about and what it means.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>September 2020</title>
         </header>
         <listItemLockup onselect="playMedia('video/2020-09/2020-09-jon-reid.m3u8', 'video')">
