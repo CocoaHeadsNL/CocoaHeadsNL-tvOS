@@ -390,10 +390,19 @@ show_header()
     printf "Copyright © $(copyright_years) Stichting CocoaHeadsNL. All rights reserved.$(nocolor)\n"
 }
 
-# Show both header and usage information
+# Show error message
+show_error_message()
+{
+    if [ "$1" != "" ]; then
+        printf "\n$(errorcolor)$1$(nocolor)\n"
+    fi
+}
+
+# Show both header and usage information and optionally an error message
 show_header_and_usage()
 {
     show_header
+    show_error_message "$1"
     show_usage
 }
 
@@ -451,9 +460,7 @@ while [[ $# -gt 0 ]]; do
 
         -* | --*)
             # Argument starts with '-' or '--' but we don't know it
-            show_header
-            printf "\n$(errorcolor)Unknown option '$key'$(nocolor)\n"
-            show_usage
+            show_header_and_usage "Unknown option '$key'"
             exit 1;;
 
         *)
@@ -466,17 +473,16 @@ while [[ $# -gt 0 ]]; do
 
 done
 
-show_header
-
 # Restore additional arguments as positional arguments
 set -- "${arguments[@]}"
 
 # Make sure we have an input filename
 if [ "$1" == "" ]; then
-    printf "\n$(errorcolor)No input file specified$(nocolor)\n"
-    show_usage
+    show_header_and_usage "No input file specified"
     exit 1
 fi
+
+show_header
 
 # If no output filename is specified, we create one based on the input filename
 if [ "$output_filename" == "" ]; then
