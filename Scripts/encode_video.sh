@@ -93,12 +93,20 @@ segment_video()
 # $4 = Optional sub-directory, e.g. for special events
 create_master_playlist()
 {
-    variantplaylistcreator -o "$(output_directory $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" \
-        $(variantplaylist_parameters_for_preset 3 $1 $2 $3 $4) \
-        $(variantplaylist_parameters_for_preset 1 $1 $2 $3 $4) \
-        $(variantplaylist_parameters_for_preset 2 $1 $2 $3 $4) \
-        $(variantplaylist_parameters_for_preset 4 $1 $2 $3 $4) \
-        $(variantplaylist_parameters_for_preset 5 $1 $2 $3 $4)
+    if [ "$framerate_low" != "$framerate_high" ]; then
+        variantplaylistcreator -o "$(output_directory $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" \
+            $(variantplaylist_parameters_for_preset 3 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 1 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 2 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 4 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 5 $1 $2 $3 $4)
+    else
+        variantplaylistcreator -o "$(output_directory $1 $2 $4)/$(add_file_extension "$3" 'm3u8')" \
+            $(variantplaylist_parameters_for_preset 3 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 1 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 2 $1 $2 $3 $4) \
+            $(variantplaylist_parameters_for_preset 5 $1 $2 $3 $4)
+    fi
 }
 
 # Return the parameters to use for the variantplaylistcreater for a specific preset.
