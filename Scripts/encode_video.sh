@@ -362,7 +362,7 @@ show_usage()
     printf "\n$(headercolor)Usage:$(nocolor)\n"
     printf "  $0 [$(optioncolor)options$(nocolor)] <$(parametercolor)input-file$(nocolor)>\n"
     printf "\n$(headercolor)Parameters:$(nocolor)\n"
-    printf "  $(parametercolor)input-file$(nocolor)              The input video file to process.\n"
+    printf "  $(parametercolor)input-file$(nocolor)                  The input video file to process.\n"
     printf "\n$(headercolor)Options:$(nocolor)\n"
     printf "  $(optioncolor)-o$(nocolor)   $(dimmedcolor)(or $(optioncolor)--output-file$(dimmedcolor))$(nocolor)     The base name for the output file (default is based on input filename).\n"
     printf "  $(optioncolor)-m$(nocolor)   $(dimmedcolor)(or $(optioncolor)--month$(dimmedcolor))$(nocolor)           The year of the recording of the video (default is $(default_for_quoted "$year" "none")).\n"
