@@ -12,7 +12,7 @@
 #
 
 # Version number
-version="1.2.0"
+version="1.2.1"
 
 # The base URL where the videos are stored
 baseurl=https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/video
