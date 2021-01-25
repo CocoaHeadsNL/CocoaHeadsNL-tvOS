@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>January 2021</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2021-01/2021-01-frank-bos-fouad-astitou.m3u8', 'video')">
+          <title>F*ck Clean Architecture</title>
+          <subtitle>Frank Bos and Fouad Astitou</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2021-01/2021-01-frank-bos-fouad-astitou.jpg" width="857" height="482" />
+              <title>F*ck Clean Architecture</title>
+              <description>Frank and Fouad describe how they have stepped away from what is generally considered best practices in app development. Without the burden of having to use certain frameworks for a so called clean architecture or full blown CI/CD pipeline they've managed to release feature of feature and increased their App Store rating and now have more happy users.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>December 2020</title>
         </header>
         <listItemLockup onselect="playMedia('video/2020-12/2020-12-maxim-tsvetkov.m3u8', 'video')">
