@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>May 2021</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2021-05/2021-05-peter-friese.m3u8', 'video')">
+          <title>Firebase for Apple Developers</title>
+          <subtitle>Peter Friese</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2021-05/2021-05-peter-friese.jpg" width="857" height="482" />
+              <title>Firebase for Apple Developers</title>
+              <description>In this talk, Peter Friese is going to walk you through the building blocks for creating modern applications on Apple’s platforms using SwiftUI and Firebase.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>April 2021</title>
         </header>
         <listItemLockup onselect="playMedia('video/2021-04/2021-04-manuel-meyer.m3u8', 'video')">
