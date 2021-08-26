@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>August 2021</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2021-08/2021-08-dani-devesa.m3u8', 'video')">
+          <title>Developing iOS Apps with an Accessibility Mindset</title>
+          <subtitle>Dani Devesa</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2021-08/2021-08-dani-devesa.jpg" width="857" height="482" />
+              <title>Developing iOS Apps with an Accessibility Mindset</title>
+              <description>Accessibility should part of the job for any developer. But as user can have very diverse disabilities it can be challenging to know what features the platform has available for them and how to use them effectively. Dani explores the API's and highlights features like VoiceOver, Switch Control and VoiceControl.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>July 2021</title>
         </header>
         <listItemLockup onselect="playMedia('video/2021-07/2021-07-roel-spruit.m3u8', 'video')">
