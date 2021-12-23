@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>December 2021</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2021-12/2021-12-jeroen-leenarts.m3u8', 'video')">
+          <title>Micro/feature frameworks</title>
+          <subtitle>Jeroen Leenarts</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2021-12/2021-12-jeroen-leenarts.jpg" width="857" height="482" />
+              <title>Micro/feature frameworks</title>
+              <description>Jeroen gives you a introduction on how to get started with a Micro Framework or even a Micro Feature architecture. You will get some hands-on guidance on how to get started with Tuist and apply it on your (next) project.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>August 2021</title>
         </header>
         <listItemLockup onselect="playMedia('video/2021-08/2021-08-dani-devesa.m3u8', 'video')">
