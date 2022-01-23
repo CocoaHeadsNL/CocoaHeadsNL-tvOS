@@ -21,6 +21,23 @@
 
       <section>
         <header>
+          <title>January 2022</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2022-01/2022-01-jeroen-bakker.m3u8', 'video')">
+          <title>How AppClips can evolve your architecture to the next level</title>
+          <subtitle>Jeroen Bakker</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-01/2022-01-jeroen-bakker.jpg" width="857" height="482" />
+              <title>How AppClips can evolve your architecture to the next level</title>
+              <description>AppClips are powerful to introduce new users to a flow in your app, but where do you start and what are the limitations? In this talk Jeroen will teach you the possibilities, how to reuse code, make use of multiple flows in 1 AppClip, tips to stay under the 10MB limit and perhaps rethink how you should architect your main app.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>December 2021</title>
         </header>
         <listItemLockup onselect="playMedia('video/2021-12/2021-12-jeroen-leenarts.m3u8', 'video')">
