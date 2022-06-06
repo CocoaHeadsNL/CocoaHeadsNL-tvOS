@@ -34,12 +34,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-      </section>
-
-      <section>
-        <header>
-          <title>May 2022</title>
-        </header>
         <listItemLockup onselect="playMedia('video/2022-05/2022-05-manuel-meyer.m3u8', 'video')">
           <title>Making Turing Proud Again</title>
           <subtitle>Manuel Meyer</subtitle>
