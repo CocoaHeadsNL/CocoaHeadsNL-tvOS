@@ -34,17 +34,6 @@
             </lockup>
           </relatedContent>
         </listItemLockup>
-        <listItemLockup onselect="playMedia('video/2022-05/2022-05-manuel-meyer.m3u8', 'video')">
-          <title>Making Turing Proud Again</title>
-          <subtitle>Manuel Meyer</subtitle>
-          <relatedContent>
-            <lockup>
-              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-05/2022-05-manuel-meyer.jpg" width="857" height="482" />
-              <title>Making Turing Proud Again</title>
-              <description>Manuel wants to make Alan Turing proud again by building declarative, axiomatic &amp; provable correct systems in Swift. He is currently writing a book on efficient software development in declarative swift. In this talk he will introduce us to how simplifying systems makes them available for true scientific testing.</description>
-            </lockup>
-          </relatedContent>
-        </listItemLockup>
       </section>
 
       <section>
@@ -178,23 +167,6 @@
               <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2021-05/2021-05-peter-friese.jpg" width="857" height="482" />
               <title>Firebase for Apple Developers</title>
               <description>In this talk, Peter Friese is going to walk you through the building blocks for creating modern applications on Apple’s platforms using SwiftUI and Firebase.</description>
-            </lockup>
-          </relatedContent>
-        </listItemLockup>
-      </section>
-
-      <section>
-        <header>
-          <title>April 2021</title>
-        </header>
-        <listItemLockup onselect="playMedia('video/2021-04/2021-04-manuel-meyer.m3u8', 'video')">
-          <title>Architecture Considered Harmful</title>
-          <subtitle>Manuel Meyer</subtitle>
-          <relatedContent>
-            <lockup>
-              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2021-04/2021-04-manuel-meyer.jpg" width="857" height="482" />
-              <title>Architecture Considered Harmful</title>
-              <description>In this extra long talk Manuel Meyer shares his ideas about reducing complexity in our code to create easily extendable and maintainable systems.</description>
             </lockup>
           </relatedContent>
         </listItemLockup>
