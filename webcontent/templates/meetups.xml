@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>September 2022</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2022-09/2022-09-maarten-van-der-velden.m3u8', 'video')">
+          <title>Live Actvities</title>
+          <subtitle>Maarten van der Velden</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-09/2022-09-maarten-van-der-velden.jpg" width="857" height="482" />
+              <title>Live Activities</title>
+              <description>A new feature in iOS 16 is Live Activities. Maarten explores what it is and what it can do for their Catawiki app. He shares his learnings and shows how they implemented it.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-09/2022-09-eugen-martynov.m3u8', 'video')">
+          <title>My path to freelance</title>
+          <subtitle>Eugen Martynov</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-09/2022-09-eugen-martynov.jpg" width="857" height="482" />
+              <title>My path to freelance</title>
+              <description>A few years ago Eugen decided to go freelance. In this talk he shares his learnings and talks about a lot of things you should think about when you go freelance.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>June 2022</title>
         </header>
         <listItemLockup onselect="playMedia('video/2022-06/2022-06-jeroen-leenarts.m3u8', 'video')">
