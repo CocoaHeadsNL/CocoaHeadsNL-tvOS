@@ -1,0 +1,267 @@
+<document>
+  <head>
+    <style>
+      .logo {
+        tv-align: center;
+      }
+      @media tv-template and (tv-theme:light) {
+      .banner { background-color:#eeeeee; }
+      }
+      @media tv-template and (tv-theme:dark) {
+      .banner { background-color:#303030; }
+      }
+    </style>
+  </head>
+  <listTemplate>
+    <banner class="banner">
+      <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/images/logo-do-ios.png" class="logo" width="291" height="159" />
+    </banner>
+
+    <list>
+
+      <section>
+        <header>
+          <title>Do iOS 2022</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-ben-proothi.m3u8', 'video')">
+          <title>Time traveling with Swift</title>
+          <subtitle>Ben Proothi</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-ben-proothi.jpg" width="857" height="482" />
+              <title>Time traveling with Swift</title>
+              <description>Ben is the youngest speaker ever on Do iOS. He is a 16 years old college student from New York. In his talk he will explore the complex roots of Swift, its current applications, and its future.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-danijela-vrzan.m3u8', 'video')">
+          <title>Swift your personal website using Publish</title>
+          <subtitle>Danijela Vrzan</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-danijela-vrzan.jpg" width="857" height="482" />
+              <title>Danijela Vrzan</title>
+              <description>Publish is a framework created by John Sundell that allows you to build static websites using Swift. In this talk by Danijela you'll learn everything you wanted to know about Publish to get started building your own website. It's so Swift!</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-stefan-blos-peter-friese.m3u8', 'video')">
+          <title>Supercharge your app with Firebase and Stream</title>
+          <subtitle>Stefan Blos and Peter Friese</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-stefan-blos-peter-friese.jpg" width="857" height="482" />
+              <title>Supercharge your app with Firebase and Stream</title>
+              <description>In this talk Peter and Stefan take a look how you can enhance your application with the power of Firebase and Stream. Specifically they will talk about how you can leverage the power of Firebase Extensions to give your applications superpowers with pre-built enhancements to the Firebase ecosystem.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-donny-wals.m3u8', 'video')">
+          <title>Managing Combine, your existing code, and async/await</title>
+          <subtitle>Donny Wals</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-donny-wals.jpg" width="857" height="482" />
+              <title>Managing Combine, your existing code, and async/await</title>
+              <description>More and more companies are looking at adopting SwiftUI, and as a result they're digging into Combine as well. But how do we integrate Combine into an existing codebase? And what about async/await? In this talk, we'll explore these questions and explore what the future of Combine and async/await will look like.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-daniel-steinberg.m3u8', 'video')">
+          <title>Previews and Package Oriented Programming</title>
+          <subtitle>Daniel Steinberg</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-daniel-steinberg.jpg" width="857" height="482" />
+              <title>Previews and Package Oriented Programming</title>
+              <description>In this talk you will be encouraged to combine an aggressive use of Preview and Packages to simplify your individual views and develop a data flow and app navigation that will be cleaner and simpler to understand.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-tim-condon.m3u8', 'video')">
+          <title>Building Swift Packages in VSCode</title>
+          <subtitle>Tim Condon</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-tim-condon.jpg" width="857" height="482" />
+              <title>Building Swift Packages in VSCode</title>
+              <description>In this talk you'll see how to write Swift packages and apps in Visual Studio code using the new Swift for VSCode extension. We'll go through code completion, package dependencies, testing and even debugging a Vapor app! Finally we'll go through how to run your apps in Remote Containers and Codespaces to standardise your development environment.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-jeremy-barger.m3u8', 'video')">
+          <title>Flying Solo</title>
+          <subtitle>Jeremy Barger</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-jeremy-barger.jpg" width="857" height="482" />
+              <title>Flying Solo</title>
+              <description>In this talk Jerenmy will share a simple four step process, with real-life examples, that can be implemented to accomplish any goal. At the end of this session, you will be able to apply this process to ensure that your first project as part of a new team is a success!</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-doios-panel.m3u8', 'video')">
+          <title>Do iOS Panel</title>
+          <subtitle>Antoine van der Lee</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-doios-panel.jpg" width="857" height="482" />
+              <title>Do iOS Panel</title>
+              <description>What can we expect of future Swift version? Should I still learn UIKit as a new engineer? Is there still reason to use Combine while we have async/await? Those and other topics will be discussed in the Do iOS panel hosted by Antoine van der Lee.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-leah-vogel.m3u8', 'video')">
+          <title>The Mythical Hands On Manager</title>
+          <subtitle>Leah Vogel</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-leah-vogel.jpg" width="857" height="482" />
+              <title>The Mythical Hands On Manager</title>
+              <description>In this talk, we'll explore the delicate balance of being an active contributor to your code base while leading a team of developers and the challenges that ensue. I will highlight some of the conflicts of interest that arise, like personal priorities versus company priorities, which can be mitigated by open lines of communication and aligning mutual expectations. Hearing the whole story can help you achieve personal and professional clarity to navigate your career path.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-pol-piella-abadia.m3u8', 'video')">
+          <title>Fantastic Swift tools and where to find them</title>
+          <subtitle>Pol Piella Abadia</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-pol-piella-abadia.jpg" width="857" height="482" />
+              <title>Fantastic Swift tools and where to find them</title>
+              <description>In this talk, I will give an explanation and examples of how Swift can be used to write code way beyond app development. I will also be talking about why it would be a good idea to use Swift and what features make Swift a suitable language for each use case.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-frank-courvile.m3u8', 'video')">
+          <title>Roll your own networking stack</title>
+          <subtitle>Frank Courville</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-frank-courville.jpg" width="857" height="482" />
+              <title>Roll your own networking stack</title>
+              <description>Does your network layer need some love but you don't know where to start? In this talk, we'll look at how we can create our own small library of composable tools to make network a joy to work with.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-maxim-cramer.m3u8', 'video')">
+          <title>Increase Product Impact With This One Simple Trick</title>
+          <subtitle>Maxim Cramer</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-maxim-cramer.jpg" width="857" height="482" />
+              <title>Increase Product Impact With This One Simple Trick</title>
+              <description>In this talk, I walk you through the tools and techniques to conduct effective user research to easily find problems and design solutions that will make your users/your boss/your bank account happy.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-hidde-van-der-ploeg.m3u8', 'video')">
+          <title>Don't forget about the wrist</title>
+          <subtitle>Hidde van der Ploeg</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-hidde-van-der-ploeg.jpg" width="857" height="482" />
+              <title>Don't forget about the wrist</title>
+              <description>These days, it's so much more fun to build for the Apple Watch. This talk will help you understand what it takes to design and build great apps for watchOS.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2022-11/doios/2022-11-betty-godier.m3u8', 'video')">
+          <title>Charming Swift Charts</title>
+          <subtitle>Betty Godier</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2022-11/doios/2022-11-betty-godier.jpg" width="857" height="482" />
+              <title>Charming Swift Charts</title>
+              <description>Whether you are in the health, finance, or mobility sector, Swift Charts gives many ways to communicate patterns or trends in your data. Let me show you during this talk the power of delighting and fascinating that offers this new iOS16 Framework.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
+          <title>Do iOS 2018</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-tom-lokhorst.m3u8', 'video')">
+          <title>Hacking Marzipan, Running iOS apps on Mac</title>
+          <subtitle>Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-tom-lokhorst.jpg" width="857" height="482" />
+              <title>Hacking Marzipan, Running iOS apps on Mac</title>
+              <description>At WWDC 2018 Apple announced that in the future it will become possible to run iOS apps on macOS. Rumours about this first appeared in December 2017 and was believed to be codenamed Marzipan. Although there is no official API or support for it yet in this talk Tom Lokhorst shows how he experimented with Marzipan and what he learned.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-bas-broek.m3u8', 'video')">
+          <title>Writing better APIs</title>
+          <subtitle>Bas Broek</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-bas-broek.jpg" width="857" height="482" />
+              <title>Writing better APIs</title>
+              <description>In this talk Bas Broek emphasises how important it is to design clean APIs and document them. Not just if you are writing a framework but also when writing your app.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-abn-amro-mobile-team.m3u8', 'video')">
+          <title>Our journey to automated releases</title>
+          <subtitle>ABN-AMRO Mobile Team</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-abn-amro-mobile-team.jpg" width="857" height="482" />
+              <title>Our journey to automated releases</title>
+              <description>In this talk four developers of the ABN-AMRO Mobile Team show how they have set up their release pipeline. They used to use Gitflow but because of a lot of long-lived branches they switched to a much simpler model with feature toggles. Their pipeline is fully automated with a range of tools that are run from Fastlane.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-alexander-griekspoor.m3u8', 'video')">
+          <title>Reversie Indie, Agenda App</title>
+          <subtitle>Alexander Griekspoor</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-alexander-griekspoor.jpg" width="857" height="482" />
+              <title>Reversie Indie, Agenda App</title>
+              <description>Alexander talks about how he got started in app development as an indie developing the app Paper. After winning an Apple design award and selling the app to a publisher and working for them for a while he left and became an indie again. He then started his next big project: the Agenda app.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-eduard-ockerse.m3u8', 'video')">
+          <title>ARKit Introduction</title>
+          <subtitle>Eduard Ockerse</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-eduard-ockerse.jpg" width="857" height="482" />
+              <title>ARKit Introduction</title>
+              <description>Eduard Ockerse demonstrates a way of showing and playing a video in 3D space with ARKit. He shows how to recognise a piece a paper with a still image of the video that is replaced in real-time with the playing video.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-daniel-steinberg.m3u8', 'video')">
+          <title>Siri shortcuts</title>
+          <subtitle>Daniel Steinberg</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-daniel-steinberg.jpg" width="857" height="482" />
+              <title>Siri shortcuts</title>
+              <description>In this talk Daniel Steinberg shows how you can implement functionality from your own app into a Siri Shortcut. He shows a simple example and demonstrates how you can even persist data in between running your app from a Siri Shortcut and standalone.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2018-11/do-ios/2018-11-david-broza.m3u8', 'video')">
+          <title>Mobile app architecture</title>
+          <subtitle>David Broza</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2018-11/do-ios/2018-11-david-broza.jpg" width="857" height="482" />
+              <title>Mobile app architecture</title>
+              <description>In this talk David talks about the mobile team at ANWB were struggling with the question what architecture to use. Go for the latest trendy framework or build a solid foundation and architecture internally. They choose the latter and David shows what they came up with.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+    </list>
+  </listTemplate>
+</document>

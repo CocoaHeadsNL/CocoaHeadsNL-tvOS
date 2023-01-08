@@ -4,7 +4,7 @@
             <menuItem selectTargetURL="templates/meetups.xml">
                 <title>Meetups</title>
             </menuItem>
-            <menuItem selectTargetURL="templates/do-ios-2018.xml">
+            <menuItem selectTargetURL="templates/do-ios.xml">
                 <title>Do iOS</title>
             </menuItem>
         </menuBar>
