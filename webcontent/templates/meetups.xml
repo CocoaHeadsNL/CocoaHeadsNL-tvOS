@@ -21,6 +21,45 @@
 
       <section>
         <header>
+          <title>July 2023</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2023-07/2023-07-frans-van-grunsven-nl.m3u8', 'video')">
+          <title>Kotlin Multiplatform Mobile @ FM (Dutch only)</title>
+          <subtitle>Frans van Grusven</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-07/2023-07-frans-van-grunsven-nl.jpg" width="857" height="482" />
+              <title>Kotlin Multiplatform Mobile @ FM (Dutch only)</title>
+              <description>Dutch only: In deze presentatie vertelt Frans hoe zij Kotlin Multiplatform Mobile hebben getest om het eventueel te gaan gebruiken voor Flitsmeister. Hij legt uit wat het is en tegen welke problem ze aanliepen.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2023-07/2023-07-frans-van-grunsven-en.m3u8', 'video')">
+          <title>Kotlin Multiplatform Mobile @ FM (English subtitles)</title>
+          <subtitle>Frans van Grusven</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-07/2023-07-frans-van-grunsven-en.jpg" width="857" height="482" />
+              <title>Kotlin Multiplatform Mobile @ FM (English subtitles)</title>
+              <description>English subtitles: In this talk Frans talks about how they tested Kotlin Multiplatform Mobile to possible start using it for Flitsmeister. He explains what it is and what problems they ran into.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2023-07/2023-07-tom-lokhorst.m3u8', 'video')">
+          <title>SharePlay - Turn your app experience into a shared experience</title>
+          <subtitle>Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-07/2023-07-tom-lokhorst.jpg" width="857" height="482" />
+              <title>SharePlay - Turn your app experience into a shared experience</title>
+              <description>SharePlay is fairly new feature in iOS that allow app developers to have their apps used by multiple users at the same time, to collaberate or to play or watch a video together. Tom explains how to implement this in your app and shows a demo shopping app he created as an example.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>May 2023</title>
         </header>
         <listItemLockup onselect="playMedia('video/2023-05/2023-05-bram-kolkman.m3u8', 'video')">
