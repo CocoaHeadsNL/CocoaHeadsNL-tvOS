@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>May 2023</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2023-05/2023-05-bram-kolkman.m3u8', 'video')">
+          <title>Tuist, the tool you missed</title>
+          <subtitle>Bram Kolkman</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-05/2023-05-bram-kolkman.jpg" width="857" height="482" />
+              <title>Tuist, the tool you missed</title>
+              <description>Bram shows how Tuist can be used to easily manage multiple targets for a white label app using very little code.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2023-05/2023-05-dima-kalachniuk.m3u8', 'video')">
+          <title>The journey from learning to creating an opensource tool</title>
+          <subtitle>Dima Kalachniuk</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-05/2023-05-dima-kalachniuk.jpg" width="857" height="482" />
+              <title>The journey from learning to creating an opensource tool</title>
+              <description>While learning to create a Mac app for his own development purpose Dima turned a simple small project into an opensource utility that has been forked multiple times and has received almost 200 stars on GitHub.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>November 2022</title>
         </header>
         <listItemLockup onselect="playMedia('video/2022-11/2022-11-daan-van-de-westerlaken.m3u8', 'video')">
