@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>September 2023</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2023-09/2023-09-mathijs-bernson.m3u8', 'video')">
+          <title>Frameworks and libraries demystified</title>
+          <subtitle>Mathijs Bernson</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-09/2023-09-mathijs-bernson.jpg" width="857" height="482" />
+              <title>Frameworks and libraries demystified</title>
+              <description>Static vs. dynamic libraries? What are frameworks and what is the role of a package manager?  Mathijs demystifies it all and gives us a primer on frameworks and libraries.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2023-09/2023-09-mathijs-kadijk.m3u8', 'video')">
+          <title>A Mac-tastic Indie Adventure</title>
+          <subtitle>Mathijs Kadijk</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-09/2023-09-mathijs-kadijk.jpg" width="857" height="482" />
+              <title>A Mac-tastic Indie Adventure</title>
+              <description>Mathijs founded a new company together with fellow CocoaHeadsNL member Tom. In this talk he shares how that came about, what they have been doing and what their experiences are in being a small indie developer team.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>July 2023</title>
         </header>
         <listItemLockup onselect="playMedia('video/2023-07/2023-07-frans-van-grunsven-nl.m3u8', 'video')">
