@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>October 2023</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2023-10/2023-10-jerry-tromp.m3u8', 'video')">
+          <title>A Tour of Xcode Cloud</title>
+          <subtitle>Jerry Tromp</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-10/2023-10-jerry-tromp.jpg" width="857" height="482" />
+              <title>A Tour of Xcode Cloud</title>
+              <description>Jerry takes us for a tour of Xcode Cloud and shows how the NOS now utilitizes this cloud based CI/CD system by Apple.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2023-10/2023-10-donny-wals.m3u8', 'video')">
+          <title>Concurrency of SwiftData</title>
+          <subtitle>Donny Wals</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2023-10/2023-10-donny-wals.jpg" width="857" height="482" />
+              <title>Concurrency of SwiftData</title>
+              <description>This talk saw the light by accident but Donny explores the concurrency features of the SwiftData API and shows us what does and what does not work.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>September 2023</title>
         </header>
         <listItemLockup onselect="playMedia('video/2023-09/2023-09-mathijs-bernson.m3u8', 'video')">
