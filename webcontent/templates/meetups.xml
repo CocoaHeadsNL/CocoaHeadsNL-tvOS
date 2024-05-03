@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>April 2024</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2024-04/2024-04-tieme-van-veen.m3u8', 'video')">
+          <title>Elevating UI Tests with network mocking</title>
+          <subtitle>Tieme van Veen</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2024-04/2024-04-tieme-van-veen.jpg" width="857" height="482" />
+              <title>Elevating UI Tests with network mocking</title>
+              <description>How do you perform UI tests when you app is heavily dependent on a backend API?  Tieme shows the use of the Mountebank and his own open source library MountebankSwift to make use of Mountebank very easy from Swift code.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2024-04/2024-04-mathijs-kadijk-tom-lokhorst.m3u8', 'video')">
+          <title>Apple Vision Pro live demo for iOS developers</title>
+          <subtitle>Mathijs Kadijk and Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2024-04/2024-04-mathijs-kadijk-tom-lokhorst.jpg" width="857" height="482" />
+              <title>Apple Vision Pro live demo for iOS developers</title>
+              <description>In this live demo Mathijs and Tom show the capabilities of the new Apple Vision Pro and what they already developed for it.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>October 2023</title>
         </header>
         <listItemLockup onselect="playMedia('video/2023-10/2023-10-jerry-tromp.m3u8', 'video')">
