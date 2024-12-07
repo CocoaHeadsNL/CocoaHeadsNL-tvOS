@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>October 2024</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2024-10/2024-10-bruno-scheele.m3u8', 'video')">
+          <title>Accessibility - The clock is ticking</title>
+          <subtitle>Bruno Scheele</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2024-10/2024-10-bruno-scheele.jpg" width="857" height="482" />
+              <title>Accessibility - The clock is ticking</title>
+              <description>With the European Accessibility Act becoming in effect by June 2025 the urge to make your apps is becoming more prevelent. In this talk Bruno gives you the insights and tips you need to get started.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2024-10/2024-10-tom-lokhorst.m3u8', 'video')">
+          <title>From Frames to Files - How video works</title>
+          <subtitle>Tom Lokhorst</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2024-10/2024-10-tom-lokhorst.jpg" width="857" height="482" />
+              <title>From Frames to Files - How video works</title>
+              <description>How does video actually work?  If it's a sequence of images, how is it that video files can become so much smaller than all individual images. Tom takes you on a journey and explains it all while coding it live.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>May 2024</title>
         </header>
         <listItemLockup onselect="playMedia('video/2024-05/2024-05-eduardo-bocato.m3u8', 'video')">
