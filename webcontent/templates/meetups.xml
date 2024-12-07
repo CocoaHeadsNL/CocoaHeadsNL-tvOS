@@ -21,6 +21,34 @@
 
       <section>
         <header>
+          <title>May 2024</title>
+        </header>
+        <listItemLockup onselect="playMedia('video/2024-05/2024-05-eduardo-bocato.m3u8', 'video')">
+          <title>adidas Apps Architecture</title>
+          <subtitle>Eduardo Bocato</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2024-05/2024-05-eduardo-bocato.jpg" width="857" height="482" />
+              <title>adidas Apps Architecture</title>
+              <description>Eduardo gives us an inside view on how adidas is structering their apps. How they manage dependencies and how and when code is shared between apps and when not.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+        <listItemLockup onselect="playMedia('video/2024-05/2024-05-georges-jamous-and-rafael-marcen.m3u8', 'video')">
+          <title>Managing our large iOS app</title>
+          <subtitle>Georges Jamous and Rafael Marcén</subtitle>
+          <relatedContent>
+            <lockup>
+              <img src="https://s3.dualstack.eu-central-1.amazonaws.com/tvos.cocoaheads.nl/stills/2024-05/2024-05-georges-jamous-and-rafael-marcen.jpg" width="857" height="482" />
+              <title>Managing our large iOS app</title>
+              <description>George and Rafael show the problems adidas is facing in maintaining and building their large iOS app. They show how they improved their build process to not only improve build time but also cut on costs.</description>
+            </lockup>
+          </relatedContent>
+        </listItemLockup>
+      </section>
+
+      <section>
+        <header>
           <title>April 2024</title>
         </header>
         <listItemLockup onselect="playMedia('video/2024-04/2024-04-tieme-van-veen.m3u8', 'video')">
